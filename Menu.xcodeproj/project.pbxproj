@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F858A3142766203200062253 /* MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3132766203200062253 /* MenuApp.swift */; };
-		F858A3162766203200062253 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3152766203200062253 /* ContentView.swift */; };
+		F858A3162766203200062253 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3152766203200062253 /* HomeView.swift */; };
 		F858A3182766203300062253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F858A3172766203300062253 /* Assets.xcassets */; };
 		F858A31B2766203300062253 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F858A31A2766203300062253 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		F858A3102766203200062253 /* Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F858A3132766203200062253 /* MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuApp.swift; sourceTree = "<group>"; };
-		F858A3152766203200062253 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F858A3152766203200062253 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F858A3172766203300062253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F858A31A2766203300062253 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				F858A3132766203200062253 /* MenuApp.swift */,
-				F858A3152766203200062253 /* ContentView.swift */,
+				F858A321276621D000062253 /* Views */,
+				F858A322276621DB00062253 /* ViewModel */,
+				F858A323276621E900062253 /* Model */,
 				F858A3172766203300062253 /* Assets.xcassets */,
 				F858A3192766203300062253 /* Preview Content */,
 			);
@@ -65,6 +67,28 @@
 				F858A31A2766203300062253 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F858A321276621D000062253 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F858A3152766203200062253 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F858A322276621DB00062253 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F858A323276621E900062253 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F858A3162766203200062253 /* ContentView.swift in Sources */,
+				F858A3162766203200062253 /* HomeView.swift in Sources */,
 				F858A3142766203200062253 /* MenuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
