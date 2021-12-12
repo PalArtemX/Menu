@@ -9,21 +9,40 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State private var selection = 0
+    @State private var selectedTab = 0
+    @State private var badge = 1
     
     var body: some View {
-        TabView {
-            
-            Text("Home")
+        TabView(selection: $selectedTab) {
+            // MARK: - Menu
+            Text("Menu")
                 .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
+                    Image(systemName: "fork.knife")
+                    Text("Menu")
                 }
-            
-            Text("Account")
+                .tag(0)
+            // MARK: - Profile
+            Text("Profile")
                 .tabItem {
-                    Image(systemName: "plus")
+                    Image(systemName: "person")
+                    Text("Profile")
                 }
+                .tag(1)
+            // MARK: - Contacts
+            Text("Contacts")
+                .tabItem {
+                    Image(systemName: "mappin.and.ellipse")
+                    Text("Contacts")
+                }
+                .tag(2)
+            // MARK: - Cart
+            Text("Cart")
+                .badge(badge)
+                .tabItem {
+                    Image(systemName: "cart")
+                    Text("Cart")
+                }
+                .tag(3)
         }
         
     }

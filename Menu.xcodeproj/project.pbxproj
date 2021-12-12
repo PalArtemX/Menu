@@ -11,6 +11,7 @@
 		F858A3162766203200062253 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3152766203200062253 /* HomeView.swift */; };
 		F858A3182766203300062253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F858A3172766203300062253 /* Assets.xcassets */; };
 		F858A31B2766203300062253 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F858A31A2766203300062253 /* Preview Assets.xcassets */; };
+		F858A3262766534C00062253 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3252766534C00062253 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F858A3152766203200062253 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F858A3172766203300062253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F858A31A2766203300062253 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F858A3252766534C00062253 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				F858A3152766203200062253 /* HomeView.swift */,
+				F858A3242766518000062253 /* TabView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,6 +92,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F858A3242766518000062253 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				F858A3252766534C00062253 /* MenuView.swift */,
+			);
+			path = TabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F858A3162766203200062253 /* HomeView.swift in Sources */,
+				F858A3262766534C00062253 /* MenuView.swift in Sources */,
 				F858A3142766203200062253 /* MenuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
