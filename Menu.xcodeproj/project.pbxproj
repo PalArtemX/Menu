@@ -12,6 +12,9 @@
 		F858A3182766203300062253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F858A3172766203300062253 /* Assets.xcassets */; };
 		F858A31B2766203300062253 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F858A31A2766203300062253 /* Preview Assets.xcassets */; };
 		F858A3262766534C00062253 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3252766534C00062253 /* MenuView.swift */; };
+		F858A3282766538000062253 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3272766538000062253 /* ProfileView.swift */; };
+		F858A32A2766539900062253 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3292766539900062253 /* ContactsView.swift */; };
+		F858A32C276653B900062253 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A32B276653B900062253 /* CartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		F858A3172766203300062253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F858A31A2766203300062253 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F858A3252766534C00062253 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		F858A3272766538000062253 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F858A3292766539900062253 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		F858A32B276653B900062253 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				F858A3252766534C00062253 /* MenuView.swift */,
+				F858A3272766538000062253 /* ProfileView.swift */,
+				F858A3292766539900062253 /* ContactsView.swift */,
+				F858A32B276653B900062253 /* CartView.swift */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
@@ -172,8 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F858A32C276653B900062253 /* CartView.swift in Sources */,
+				F858A3282766538000062253 /* ProfileView.swift in Sources */,
 				F858A3162766203200062253 /* HomeView.swift in Sources */,
 				F858A3262766534C00062253 /* MenuView.swift in Sources */,
+				F858A32A2766539900062253 /* ContactsView.swift in Sources */,
 				F858A3142766203200062253 /* MenuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

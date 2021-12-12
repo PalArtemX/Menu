@@ -1,5 +1,5 @@
 //
-//  MenuView.swift
+//  ProfileView.swift
 //  Menu
 //
 //  Created by Artem Paliutin on 12.12.2021.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct MenuView: View {
+struct ProfileView: View {
     var body: some View {
-        Image(systemName: "fork.knife")
+        Image(systemName: "person")
     }
 }
 
@@ -22,8 +22,8 @@ struct MenuView: View {
 
 
 
-struct MenuView_Previews: PreviewProvider {
+struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuView()
+        ProfileView()
     }
 }
