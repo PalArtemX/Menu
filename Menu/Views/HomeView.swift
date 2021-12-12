@@ -15,28 +15,28 @@ struct HomeView: View {
     var body: some View {
         TabView(selection: $selectedTab) {
             // MARK: - Menu
-            Text("Menu")
+            MenuView()
                 .tabItem {
                     Image(systemName: "fork.knife")
                     Text("Menu")
                 }
                 .tag(0)
             // MARK: - Profile
-            Text("Profile")
+            ProfileView()
                 .tabItem {
                     Image(systemName: "person")
                     Text("Profile")
                 }
                 .tag(1)
             // MARK: - Contacts
-            Text("Contacts")
+            ContactsView()
                 .tabItem {
                     Image(systemName: "mappin.and.ellipse")
                     Text("Contacts")
                 }
                 .tag(2)
             // MARK: - Cart
-            Text("Cart")
+            CartView()
                 .badge(badge)
                 .tabItem {
                     Image(systemName: "cart")
