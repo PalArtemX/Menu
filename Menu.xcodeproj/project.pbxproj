@@ -15,6 +15,9 @@
 		F858A3282766538000062253 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3272766538000062253 /* ProfileView.swift */; };
 		F858A32A2766539900062253 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3292766539900062253 /* ContactsView.swift */; };
 		F858A32C276653B900062253 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A32B276653B900062253 /* CartView.swift */; };
+		F858A3322767623F00062253 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3312767623F00062253 /* MapView.swift */; };
+		F858A33427677D9F00062253 /* ContactAddressPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A33327677D9F00062253 /* ContactAddressPhoneView.swift */; };
+		F858A3362767882000062253 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3352767882000062253 /* MarkerInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		F858A3272766538000062253 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		F858A3292766539900062253 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		F858A32B276653B900062253 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		F858A3312767623F00062253 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F858A33327677D9F00062253 /* ContactAddressPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAddressPhoneView.swift; sourceTree = "<group>"; };
+		F858A3352767882000062253 /* MarkerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +109,47 @@
 		F858A3242766518000062253 /* TabView */ = {
 			isa = PBXGroup;
 			children = (
-				F858A3252766534C00062253 /* MenuView.swift */,
-				F858A3272766538000062253 /* ProfileView.swift */,
-				F858A3292766539900062253 /* ContactsView.swift */,
-				F858A32B276653B900062253 /* CartView.swift */,
+				F858A32D276761AE00062253 /* MenuView */,
+				F858A32E276761BB00062253 /* ProfileView */,
+				F858A32F276761C700062253 /* ContactsView */,
+				F858A330276761D300062253 /* CartView */,
 			);
 			path = TabView;
+			sourceTree = "<group>";
+		};
+		F858A32D276761AE00062253 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				F858A3252766534C00062253 /* MenuView.swift */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		F858A32E276761BB00062253 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				F858A3272766538000062253 /* ProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		F858A32F276761C700062253 /* ContactsView */ = {
+			isa = PBXGroup;
+			children = (
+				F858A3292766539900062253 /* ContactsView.swift */,
+				F858A3312767623F00062253 /* MapView.swift */,
+				F858A33327677D9F00062253 /* ContactAddressPhoneView.swift */,
+				F858A3352767882000062253 /* MarkerInfoView.swift */,
+			);
+			path = ContactsView;
+			sourceTree = "<group>";
+		};
+		F858A330276761D300062253 /* CartView */ = {
+			isa = PBXGroup;
+			children = (
+				F858A32B276653B900062253 /* CartView.swift */,
+			);
+			path = CartView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,12 +222,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F858A3322767623F00062253 /* MapView.swift in Sources */,
 				F858A32C276653B900062253 /* CartView.swift in Sources */,
 				F858A3282766538000062253 /* ProfileView.swift in Sources */,
 				F858A3162766203200062253 /* HomeView.swift in Sources */,
 				F858A3262766534C00062253 /* MenuView.swift in Sources */,
 				F858A32A2766539900062253 /* ContactsView.swift in Sources */,
 				F858A3142766203200062253 /* MenuApp.swift in Sources */,
+				F858A3362767882000062253 /* MarkerInfoView.swift in Sources */,
+				F858A33427677D9F00062253 /* ContactAddressPhoneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
