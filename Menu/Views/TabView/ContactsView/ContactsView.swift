@@ -10,13 +10,42 @@ import SwiftUI
 struct ContactsView: View {
     var body: some View {
         VStack {
+            // MARK: - MapView
             MapView()
-                .frame(maxHeight: 300)
-                .cornerRadius(30)
-                .padding()
-            Spacer()
-            ContactAddressPhoneView(address: "Park Kultury", phone: "777 77 77", openingHours: "10:00 - 02:00")
+                .frame(maxHeight: .infinity)
+                .cornerRadius(20)
+            // MARK: - Buttons
+            HStack {
+                // CALL
+                Button {
+                    //
+                } label: {
+                    Image(systemName: "phone")
+                    Text("Call")
+                }
+                // CHAT
+                Button {
+                    //
+                } label: {
+                    Image(systemName: "bubble.right")
+                    Text("Chat")
+                }
+            }
+            .font(.headline)
+            .buttonStyle(.bordered)
+            .tint(.orange)
+            .buttonBorderShape(.capsule)
+            .padding()
+            
+            Divider()
+            // MARK: - SocialNetworkView
+            SocialNetworkView()
+            Divider()
+            // MARK: - About
+            Text("About")
+            Divider()
         }
+        .ignoresSafeArea(edges: .top)
     }
 }
 
@@ -31,6 +60,10 @@ struct ContactsView: View {
 
 struct ContactsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactsView()
+        Group {
+            ContactsView()
+            ContactsView()
+                .preferredColorScheme(.dark)
+        }
     }
 }

@@ -44,7 +44,6 @@ struct HomeView: View {
                 }
                 .tag(3)
         }
-        
     }
 }
 

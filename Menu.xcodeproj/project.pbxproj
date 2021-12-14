@@ -18,10 +18,11 @@
 		F858A3322767623F00062253 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3312767623F00062253 /* MapView.swift */; };
 		F858A33427677D9F00062253 /* ContactAddressPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A33327677D9F00062253 /* ContactAddressPhoneView.swift */; };
 		F858A3362767882000062253 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3352767882000062253 /* MarkerInfoView.swift */; };
+		F858A3382767B8D000062253 /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3372767B8D000062253 /* SocialNetworkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F858A3102766203200062253 /* Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F858A3102766203200062253 /* Park Kultury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park Kultury.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F858A3132766203200062253 /* MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuApp.swift; sourceTree = "<group>"; };
 		F858A3152766203200062253 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F858A3172766203300062253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,6 +34,7 @@
 		F858A3312767623F00062253 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F858A33327677D9F00062253 /* ContactAddressPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAddressPhoneView.swift; sourceTree = "<group>"; };
 		F858A3352767882000062253 /* MarkerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
+		F858A3372767B8D000062253 /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,7 @@
 		F858A3112766203200062253 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F858A3102766203200062253 /* Menu.app */,
+				F858A3102766203200062253 /* Park Kultury.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +142,7 @@
 				F858A3312767623F00062253 /* MapView.swift */,
 				F858A33327677D9F00062253 /* ContactAddressPhoneView.swift */,
 				F858A3352767882000062253 /* MarkerInfoView.swift */,
+				F858A3372767B8D000062253 /* SocialNetworkView.swift */,
 			);
 			path = ContactsView;
 			sourceTree = "<group>";
@@ -169,7 +172,7 @@
 			);
 			name = Menu;
 			productName = Menu;
-			productReference = F858A3102766203200062253 /* Menu.app */;
+			productReference = F858A3102766203200062253 /* Park Kultury.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -226,6 +229,7 @@
 				F858A32C276653B900062253 /* CartView.swift in Sources */,
 				F858A3282766538000062253 /* ProfileView.swift in Sources */,
 				F858A3162766203200062253 /* HomeView.swift in Sources */,
+				F858A3382767B8D000062253 /* SocialNetworkView.swift in Sources */,
 				F858A3262766534C00062253 /* MenuView.swift in Sources */,
 				F858A32A2766539900062253 /* ContactsView.swift in Sources */,
 				F858A3142766203200062253 /* MenuApp.swift in Sources */,
@@ -367,6 +371,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,7 +380,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pal.artem.Menu;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Park Kultury";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -396,6 +401,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,7 +410,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pal.artem.Menu;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Park Kultury";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
