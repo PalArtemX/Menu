@@ -15,28 +15,7 @@ struct ContactsView: View {
                 .frame(maxHeight: .infinity)
                 .cornerRadius(20)
             // MARK: - Buttons
-            HStack {
-                // CALL
-                Button {
-                    //
-                } label: {
-                    Image(systemName: "phone")
-                    Text("Call")
-                }
-                // CHAT
-                Button {
-                    //
-                } label: {
-                    Image(systemName: "bubble.right")
-                    Text("Chat")
-                }
-            }
-            .font(.headline)
-            .buttonStyle(.bordered)
-            .tint(.orange)
-            .buttonBorderShape(.capsule)
-            .padding()
-            
+            ButtonsContactsView()
             Divider()
             // MARK: - SocialNetworkView
             SocialNetworkView()

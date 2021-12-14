@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8335A4027690C77004C5793 /* ButtonsContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8335A3F27690C77004C5793 /* ButtonsContactsView.swift */; };
 		F858A3142766203200062253 /* MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3132766203200062253 /* MenuApp.swift */; };
 		F858A3162766203200062253 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3152766203200062253 /* HomeView.swift */; };
 		F858A3182766203300062253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F858A3172766203300062253 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8335A3F27690C77004C5793 /* ButtonsContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsContactsView.swift; sourceTree = "<group>"; };
 		F858A3102766203200062253 /* Park Kultury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park Kultury.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F858A3132766203200062253 /* MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuApp.swift; sourceTree = "<group>"; };
 		F858A3152766203200062253 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -111,48 +113,49 @@
 		F858A3242766518000062253 /* TabView */ = {
 			isa = PBXGroup;
 			children = (
-				F858A32D276761AE00062253 /* MenuView */,
-				F858A32E276761BB00062253 /* ProfileView */,
-				F858A32F276761C700062253 /* ContactsView */,
-				F858A330276761D300062253 /* CartView */,
+				F858A3252766534C00062253 /* MenuView.swift */,
+				F858A32D276761AE00062253 /* MenuViewDetail */,
+				F858A3272766538000062253 /* ProfileView.swift */,
+				F858A32E276761BB00062253 /* ProfileViewDetail */,
+				F858A3292766539900062253 /* ContactsView.swift */,
+				F858A32F276761C700062253 /* ContactsViewDetail */,
+				F858A32B276653B900062253 /* CartView.swift */,
+				F858A330276761D300062253 /* CartViewDetail */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
 		};
-		F858A32D276761AE00062253 /* MenuView */ = {
+		F858A32D276761AE00062253 /* MenuViewDetail */ = {
 			isa = PBXGroup;
 			children = (
-				F858A3252766534C00062253 /* MenuView.swift */,
 			);
-			path = MenuView;
+			path = MenuViewDetail;
 			sourceTree = "<group>";
 		};
-		F858A32E276761BB00062253 /* ProfileView */ = {
+		F858A32E276761BB00062253 /* ProfileViewDetail */ = {
 			isa = PBXGroup;
 			children = (
-				F858A3272766538000062253 /* ProfileView.swift */,
 			);
-			path = ProfileView;
+			path = ProfileViewDetail;
 			sourceTree = "<group>";
 		};
-		F858A32F276761C700062253 /* ContactsView */ = {
+		F858A32F276761C700062253 /* ContactsViewDetail */ = {
 			isa = PBXGroup;
 			children = (
-				F858A3292766539900062253 /* ContactsView.swift */,
 				F858A3312767623F00062253 /* MapView.swift */,
 				F858A33327677D9F00062253 /* ContactAddressPhoneView.swift */,
 				F858A3352767882000062253 /* MarkerInfoView.swift */,
 				F858A3372767B8D000062253 /* SocialNetworkView.swift */,
+				F8335A3F27690C77004C5793 /* ButtonsContactsView.swift */,
 			);
-			path = ContactsView;
+			path = ContactsViewDetail;
 			sourceTree = "<group>";
 		};
-		F858A330276761D300062253 /* CartView */ = {
+		F858A330276761D300062253 /* CartViewDetail */ = {
 			isa = PBXGroup;
 			children = (
-				F858A32B276653B900062253 /* CartView.swift */,
 			);
-			path = CartView;
+			path = CartViewDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +231,7 @@
 				F858A3322767623F00062253 /* MapView.swift in Sources */,
 				F858A32C276653B900062253 /* CartView.swift in Sources */,
 				F858A3282766538000062253 /* ProfileView.swift in Sources */,
+				F8335A4027690C77004C5793 /* ButtonsContactsView.swift in Sources */,
 				F858A3162766203200062253 /* HomeView.swift in Sources */,
 				F858A3382767B8D000062253 /* SocialNetworkView.swift in Sources */,
 				F858A3262766534C00062253 /* MenuView.swift in Sources */,
