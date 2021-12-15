@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F8335A4027690C77004C5793 /* ButtonsContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8335A3F27690C77004C5793 /* ButtonsContactsView.swift */; };
+		F8335A4227693206004C5793 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8335A4127693206004C5793 /* Menu.swift */; };
+		F8335A442769326E004C5793 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8335A432769326E004C5793 /* MenuViewModel.swift */; };
 		F858A3142766203200062253 /* MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3132766203200062253 /* MenuApp.swift */; };
 		F858A3162766203200062253 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3152766203200062253 /* HomeView.swift */; };
 		F858A3182766203300062253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F858A3172766203300062253 /* Assets.xcassets */; };
@@ -16,14 +18,16 @@
 		F858A3282766538000062253 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3272766538000062253 /* ProfileView.swift */; };
 		F858A32A2766539900062253 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3292766539900062253 /* ContactsView.swift */; };
 		F858A32C276653B900062253 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A32B276653B900062253 /* CartView.swift */; };
-		F858A3322767623F00062253 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3312767623F00062253 /* MapView.swift */; };
 		F858A33427677D9F00062253 /* ContactAddressPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A33327677D9F00062253 /* ContactAddressPhoneView.swift */; };
 		F858A3362767882000062253 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3352767882000062253 /* MarkerInfoView.swift */; };
 		F858A3382767B8D000062253 /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3372767B8D000062253 /* SocialNetworkView.swift */; };
+		F8CF4CD3276A56C900B5DC84 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3312767623F00062253 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F8335A3F27690C77004C5793 /* ButtonsContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsContactsView.swift; sourceTree = "<group>"; };
+		F8335A4127693206004C5793 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		F8335A432769326E004C5793 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		F858A3102766203200062253 /* Park Kultury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park Kultury.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F858A3132766203200062253 /* MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuApp.swift; sourceTree = "<group>"; };
 		F858A3152766203200062253 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 		F858A322276621DB00062253 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F8335A432769326E004C5793 /* MenuViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 		F858A323276621E900062253 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F8335A4127693206004C5793 /* Menu.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,15 +234,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F858A3322767623F00062253 /* MapView.swift in Sources */,
 				F858A32C276653B900062253 /* CartView.swift in Sources */,
 				F858A3282766538000062253 /* ProfileView.swift in Sources */,
 				F8335A4027690C77004C5793 /* ButtonsContactsView.swift in Sources */,
 				F858A3162766203200062253 /* HomeView.swift in Sources */,
+				F8CF4CD3276A56C900B5DC84 /* MapView.swift in Sources */,
 				F858A3382767B8D000062253 /* SocialNetworkView.swift in Sources */,
+				F8335A4227693206004C5793 /* Menu.swift in Sources */,
 				F858A3262766534C00062253 /* MenuView.swift in Sources */,
 				F858A32A2766539900062253 /* ContactsView.swift in Sources */,
 				F858A3142766203200062253 /* MenuApp.swift in Sources */,
+				F8335A442769326E004C5793 /* MenuViewModel.swift in Sources */,
 				F858A3362767882000062253 /* MarkerInfoView.swift in Sources */,
 				F858A33427677D9F00062253 /* ContactAddressPhoneView.swift in Sources */,
 			);

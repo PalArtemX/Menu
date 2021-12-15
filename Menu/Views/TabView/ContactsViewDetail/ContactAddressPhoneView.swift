@@ -9,21 +9,31 @@ import SwiftUI
 
 struct ContactAddressPhoneView: View {
     
-    let address: String
-    let phone: String
-    let openingHours: String
+    @ObservedObject var vm: MenuViewModel
     
     var body: some View {
         ZStack {
             VStack {
-                Text(address)
+                // MARK: - Address
+                Text(vm.menu.address)
                     .font(.headline)
+                    .foregroundColor(.accentColor)
+                    .padding(.bottom)
+
+                // MARK: - OpeningHours
+                HStack {
+                    Image(systemName: "clock")
+                    Text(vm.menu.openingHours)
+                        
+                }
+                .foregroundColor(.accentColor)
+                // MARK: - Phone
                 HStack {
                     Image(systemName: "phone")
-                    Text(phone)
+                    Text(vm.menu.numberPhone)
                 }
-                Text(openingHours)
-                    .foregroundColor(.green)
+                .foregroundColor(.secondary)
+                .font(.subheadline)
             }
             .padding()
             .background(.ultraThinMaterial)
@@ -44,6 +54,14 @@ struct ContactAddressPhoneView: View {
 
 struct ContactAddressPhoneView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactAddressPhoneView(address: "Molodegny Prospect 2A", phone: "777 77 77", openingHours: "10:00 - 02:00")
+        Group {
+            ContactAddressPhoneView(vm: MenuViewModel())
+                .previewLayout(.sizeThatFits)
+                .padding()
+            ContactAddressPhoneView(vm: MenuViewModel())
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }

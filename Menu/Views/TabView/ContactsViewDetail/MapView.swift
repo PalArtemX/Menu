@@ -15,26 +15,26 @@ struct Location: Identifiable {
     let coordinate: CLLocationCoordinate2D
 }
 
+
+
 // MARK: - MapView
 struct MapView: View {
+    @ObservedObject var vm: MenuViewModel
     
     @State private var mapRegion = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 56.242243, longitude: 43.860245),
         span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
     
-    let locations = [
-        Location(name: "Park Kul'tury", coordinate: CLLocationCoordinate2D(
-        latitude: 56.242243,
-        longitude: 43.860245))
-    ]
-    
-    
+    // MARK: - locations
+    let locations = [Location(
+        name: "Park Kultury",
+        coordinate: CLLocationCoordinate2D(latitude: 56.242243, longitude: 43.860245))]
     
     var body: some View {
+        // MARK: - Map
         Map(coordinateRegion: $mapRegion, annotationItems: locations) { location in
             MapAnnotation(coordinate: location.coordinate) {
-                
-                MarkerInfoView(nameCafe: "Park Kultury")
+                MarkerInfoView(vm: vm)
             }
         }
     }
@@ -51,7 +51,8 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(vm: MenuViewModel())
+            .previewLayout(.sizeThatFits)
     }
 }
 

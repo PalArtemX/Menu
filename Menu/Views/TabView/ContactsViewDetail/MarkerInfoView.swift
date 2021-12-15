@@ -9,28 +9,28 @@ import SwiftUI
 
 struct MarkerInfoView: View {
     
-    @State private var isShowAnnotation = false
-    let nameCafe: String
+    @State private var isShowAnnotationMap = false
+    @ObservedObject var vm: MenuViewModel
     
     var body: some View {
         VStack {
-            // name
+            // MARK: - Name
             HStack {
-                Text(nameCafe)
+                Text(vm.menu.nameCafe)
                     .font(.callout)
                 Image(systemName: "fork.knife")
             }
-            // marker
+            // MARK: - Marker
             Image(systemName: "mappin.and.ellipse")
                 .symbolRenderingMode(.hierarchical)
                 .font(.largeTitle)
                 .foregroundColor(.red)
                 .onTapGesture {
-                    isShowAnnotation.toggle()
+                    isShowAnnotationMap.toggle()
                 }
-            // Info on Tap
-            ContactAddressPhoneView(address: "Molodegny Prospect 2A", phone: "777-77-77", openingHours: "10:00 - 02:00")
-                .opacity(isShowAnnotation ? 1 : 0)
+            // MARK: - Info on Tap
+            ContactAddressPhoneView(vm: vm)
+                .opacity(isShowAnnotationMap ? 1 : 0)
         }
         .foregroundColor(.orange)
     }
@@ -47,6 +47,14 @@ struct MarkerInfoView: View {
 
 struct MarkerInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        MarkerInfoView(nameCafe: "Park Kultury")
+        Group {
+            MarkerInfoView(vm: MenuViewModel())
+                .previewLayout(.sizeThatFits)
+            .padding()
+            MarkerInfoView(vm: MenuViewModel())
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }

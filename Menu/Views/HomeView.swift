@@ -11,6 +11,7 @@ struct HomeView: View {
     
     @State private var selectedTab = 0
     @State private var badge = 1
+    @StateObject var vm = MenuViewModel()
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -29,7 +30,7 @@ struct HomeView: View {
                 }
                 .tag(1)
             // MARK: - Contacts
-            ContactsView()
+            ContactsView(vm: vm)
                 .tabItem {
                     Image(systemName: "mappin.and.ellipse")
                     Text("Contacts")

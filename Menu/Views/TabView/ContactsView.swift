@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct ContactsView: View {
+    
+    @ObservedObject var vm: MenuViewModel
+    
     var body: some View {
         VStack {
             // MARK: - MapView
-            MapView()
+            MapView(vm: vm)
                 .frame(maxHeight: .infinity)
                 .cornerRadius(20)
             // MARK: - Buttons
-            ButtonsContactsView()
+            ButtonsContactsView(vm: vm)
             Divider()
             // MARK: - SocialNetworkView
             SocialNetworkView()
+            Divider()
+            // MARK: - Info
+            Text("Info")
             Divider()
             // MARK: - About
             Text("About")
@@ -40,9 +46,7 @@ struct ContactsView: View {
 struct ContactsView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContactsView()
-            ContactsView()
-                .preferredColorScheme(.dark)
+            ContactsView(vm: MenuViewModel())
         }
     }
 }

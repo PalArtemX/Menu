@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ButtonsContactsView: View {
+    
+    @ObservedObject var vm: MenuViewModel
+    
     var body: some View {
         HStack {
             // MARK: - Call
-            Button {
-                //
-            } label: {
+            // FIXME: - Hard cod tel
+            Link(destination: URL(string: "tel:\(vm.menu.numberPhone)")!) {
                 Image(systemName: "phone")
                 Text("Call")
             }
@@ -44,6 +46,14 @@ struct ButtonsContactsView: View {
 
 struct ButtonsContactsView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonsContactsView()
+        Group {
+            ButtonsContactsView(vm: MenuViewModel())
+                .previewLayout(.sizeThatFits)
+            .padding()
+            ButtonsContactsView(vm: MenuViewModel())
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }

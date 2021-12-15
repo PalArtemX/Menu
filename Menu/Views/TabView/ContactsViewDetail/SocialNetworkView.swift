@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SocialNetworkView: View {
     
-    let width: CGFloat = 30
+    let width: CGFloat = 33
     
     let vkURL = URL(string: "https://vk.com")
     let facebookURL = URL(string: "https://www.facebook.com")
@@ -65,6 +65,14 @@ struct SocialNetworkView: View {
 
 struct SocialNetworkView_Previews: PreviewProvider {
     static var previews: some View {
-        SocialNetworkView()
+        Group {
+            SocialNetworkView()
+                .previewLayout(.sizeThatFits)
+            .padding()
+            SocialNetworkView()
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }
