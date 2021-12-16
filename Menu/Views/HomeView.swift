@@ -8,13 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
-    
-    @State private var selectedTab = 0
-    @State private var badge = 1
     @StateObject var vm = MenuViewModel()
     
     var body: some View {
-        TabView(selection: $selectedTab) {
+        TabView(selection: $vm.menu.selectedTab) {
             // MARK: - Menu
             MenuView()
                 .tabItem {
@@ -38,7 +35,7 @@ struct HomeView: View {
                 .tag(2)
             // MARK: - Cart
             CartView()
-                .badge(badge)
+                .badge(vm.menu.badgeCart)
                 .tabItem {
                     Image(systemName: "cart")
                     Text("Cart")

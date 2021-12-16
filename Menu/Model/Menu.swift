@@ -13,4 +13,7 @@ struct Menu {
     var nameCafe: String
     var address: String
     var openingHours: String
+    
+    var badgeCart: Int
+    var selectedTab: Int
 }

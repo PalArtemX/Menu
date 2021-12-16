@@ -10,7 +10,8 @@
 		F8335A4027690C77004C5793 /* ButtonsContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8335A3F27690C77004C5793 /* ButtonsContactsView.swift */; };
 		F8335A4227693206004C5793 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8335A4127693206004C5793 /* Menu.swift */; };
 		F8335A442769326E004C5793 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8335A432769326E004C5793 /* MenuViewModel.swift */; };
-		F8397116276B4DCC00D8151E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8397115276B4DCC00D8151E /* InfoView.swift */; };
+		F8397116276B4DCC00D8151E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8397115276B4DCC00D8151E /* AboutView.swift */; };
+		F8397118276B711800D8151E /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8397117276B711800D8151E /* BackgroundView.swift */; };
 		F858A3142766203200062253 /* MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3132766203200062253 /* MenuApp.swift */; };
 		F858A3162766203200062253 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3152766203200062253 /* HomeView.swift */; };
 		F858A3182766203300062253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F858A3172766203300062253 /* Assets.xcassets */; };
@@ -29,7 +30,8 @@
 		F8335A3F27690C77004C5793 /* ButtonsContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsContactsView.swift; sourceTree = "<group>"; };
 		F8335A4127693206004C5793 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		F8335A432769326E004C5793 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
-		F8397115276B4DCC00D8151E /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		F8397115276B4DCC00D8151E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		F8397117276B711800D8151E /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		F858A3102766203200062253 /* Park Kultury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park Kultury.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F858A3132766203200062253 /* MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuApp.swift; sourceTree = "<group>"; };
 		F858A3152766203200062253 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				F858A32F276761C700062253 /* ContactsViewDetail */,
 				F858A32B276653B900062253 /* CartView.swift */,
 				F858A330276761D300062253 /* CartViewDetail */,
+				F8397117276B711800D8151E /* BackgroundView.swift */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
@@ -155,7 +158,7 @@
 				F858A3352767882000062253 /* MarkerInfoView.swift */,
 				F858A3372767B8D000062253 /* SocialNetworkView.swift */,
 				F8335A3F27690C77004C5793 /* ButtonsContactsView.swift */,
-				F8397115276B4DCC00D8151E /* InfoView.swift */,
+				F8397115276B4DCC00D8151E /* AboutView.swift */,
 			);
 			path = ContactsViewDetail;
 			sourceTree = "<group>";
@@ -237,13 +240,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8397118276B711800D8151E /* BackgroundView.swift in Sources */,
 				F858A32C276653B900062253 /* CartView.swift in Sources */,
 				F858A3282766538000062253 /* ProfileView.swift in Sources */,
 				F8335A4027690C77004C5793 /* ButtonsContactsView.swift in Sources */,
 				F858A3162766203200062253 /* HomeView.swift in Sources */,
 				F8CF4CD3276A56C900B5DC84 /* MapView.swift in Sources */,
 				F858A3382767B8D000062253 /* SocialNetworkView.swift in Sources */,
-				F8397116276B4DCC00D8151E /* InfoView.swift in Sources */,
+				F8397116276B4DCC00D8151E /* AboutView.swift in Sources */,
 				F8335A4227693206004C5793 /* Menu.swift in Sources */,
 				F858A3262766534C00062253 /* MenuView.swift in Sources */,
 				F858A32A2766539900062253 /* ContactsView.swift in Sources */,

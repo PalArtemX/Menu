@@ -1,5 +1,5 @@
 //
-//  InfoView.swift
+//  AboutView.swift
 //  Menu
 //
 //  Created by Artem Paliutin on 16.12.2021.
@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct InfoView: View {
+struct AboutView: View {
     var body: some View {
         VStack {
             Spacer()
             // MARK: - Logo
-            Image(systemName: "applelogo")
+            Image(systemName: "fork.knife")
                 .font(Font.system(size: 150))
                 .padding()
+                .foregroundColor(.accentColor)
             
             // MARK: - Version
             Text("Version 1.0, Build 1")
@@ -46,8 +47,8 @@ struct InfoView: View {
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            InfoView()
-            InfoView()
+            AboutView()
+            AboutView()
                 .preferredColorScheme(.dark)
         }
     }

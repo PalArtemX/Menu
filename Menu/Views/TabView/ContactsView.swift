@@ -10,6 +10,7 @@ import SwiftUI
 struct ContactsView: View {
     
     @ObservedObject var vm: MenuViewModel
+    @State private var showAboutView = false
     
     var body: some View {
         VStack {
@@ -23,11 +24,22 @@ struct ContactsView: View {
             // MARK: - SocialNetworkView
             SocialNetworkView()
             Divider()
-            // MARK: - Info
-            Text("Info")
+            // MARK: - ContactAddressPhoneView
+            ContactAddressPhoneView(vm: vm)
             Divider()
             // MARK: - About
-            Text("About")
+            HStack {
+                Image(systemName: "info.circle")
+                Text("About")
+                    .onTapGesture {
+                        showAboutView.toggle()
+                    }
+                    .sheet(isPresented: $showAboutView, onDismiss: nil) {
+                        AboutView()
+                }
+            }
+            .foregroundColor(.accentColor)
+            .font(.subheadline)
             Divider()
         }
         .ignoresSafeArea(edges: .top)

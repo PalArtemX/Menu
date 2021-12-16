@@ -14,7 +14,9 @@ class MenuViewModel: ObservableObject {
         numberPhone: "7777777",
         nameCafe: "Park Kultyry",
         address: "Molodegny Prospect 2A",
-        openingHours: "10:00 - 23:00")
+        openingHours: "10:00 - 23:00",
+        badgeCart: 1,
+        selectedTab: 0)
     
     
 }
