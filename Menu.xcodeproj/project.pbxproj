@@ -64,8 +64,23 @@
 			isa = PBXGroup;
 			children = (
 				F8397117276B711800D8151E /* BackgroundView.swift */,
+				F839711A276B768A00D8151E /* ShapeLogoView.swift */,
 			);
 			path = Background;
+			sourceTree = "<group>";
+		};
+		F8397122276B79AB00D8151E /* ProfileViewsDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProfileViewsDetails;
+			sourceTree = "<group>";
+		};
+		F8397123276B79C200D8151E /* CartViewsDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CartViewsDetails;
 			sourceTree = "<group>";
 		};
 		F858A3072766203200062253 = {
@@ -109,7 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				F858A3152766203200062253 /* HomeView.swift */,
-				F858A3242766518000062253 /* TabView */,
+				F858A3242766518000062253 /* TabViews */,
+				F8397121276B78F400D8151E /* Background */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,38 +146,29 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		F858A3242766518000062253 /* TabView */ = {
+		F858A3242766518000062253 /* TabViews */ = {
 			isa = PBXGroup;
 			children = (
+				F858A32D276761AE00062253 /* MenuViewsDetails */,
+				F8397122276B79AB00D8151E /* ProfileViewsDetails */,
+				F858A32F276761C700062253 /* ContactsViewsDetails */,
+				F8397123276B79C200D8151E /* CartViewsDetails */,
 				F858A3252766534C00062253 /* MenuView.swift */,
-				F839711A276B768A00D8151E /* ShapeLogoView.swift */,
-				F858A32D276761AE00062253 /* MenuViewDetail */,
 				F858A3272766538000062253 /* ProfileView.swift */,
-				F858A32E276761BB00062253 /* ProfileViewDetail */,
 				F858A3292766539900062253 /* ContactsView.swift */,
-				F858A32F276761C700062253 /* ContactsViewDetail */,
 				F858A32B276653B900062253 /* CartView.swift */,
-				F858A330276761D300062253 /* CartViewDetail */,
-				F8397121276B78F400D8151E /* Background */,
 			);
-			path = TabView;
+			path = TabViews;
 			sourceTree = "<group>";
 		};
-		F858A32D276761AE00062253 /* MenuViewDetail */ = {
+		F858A32D276761AE00062253 /* MenuViewsDetails */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = MenuViewDetail;
+			path = MenuViewsDetails;
 			sourceTree = "<group>";
 		};
-		F858A32E276761BB00062253 /* ProfileViewDetail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ProfileViewDetail;
-			sourceTree = "<group>";
-		};
-		F858A32F276761C700062253 /* ContactsViewDetail */ = {
+		F858A32F276761C700062253 /* ContactsViewsDetails */ = {
 			isa = PBXGroup;
 			children = (
 				F858A3312767623F00062253 /* MapView.swift */,
@@ -171,14 +178,7 @@
 				F8335A3F27690C77004C5793 /* ButtonsContactsView.swift */,
 				F8397115276B4DCC00D8151E /* AboutView.swift */,
 			);
-			path = ContactsViewDetail;
-			sourceTree = "<group>";
-		};
-		F858A330276761D300062253 /* CartViewDetail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CartViewDetail;
+			path = ContactsViewsDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
