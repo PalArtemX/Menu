@@ -60,13 +60,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F8397119276B763900D8151E /* Background */ = {
+		F8397121276B78F400D8151E /* Background */ = {
 			isa = PBXGroup;
 			children = (
 				F8397117276B711800D8151E /* BackgroundView.swift */,
-				F839711A276B768A00D8151E /* ShapeLogoView.swift */,
 			);
-			name = Background;
+			path = Background;
 			sourceTree = "<group>";
 		};
 		F858A3072766203200062253 = {
@@ -135,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				F858A3252766534C00062253 /* MenuView.swift */,
+				F839711A276B768A00D8151E /* ShapeLogoView.swift */,
 				F858A32D276761AE00062253 /* MenuViewDetail */,
 				F858A3272766538000062253 /* ProfileView.swift */,
 				F858A32E276761BB00062253 /* ProfileViewDetail */,
@@ -142,7 +142,7 @@
 				F858A32F276761C700062253 /* ContactsViewDetail */,
 				F858A32B276653B900062253 /* CartView.swift */,
 				F858A330276761D300062253 /* CartViewDetail */,
-				F8397119276B763900D8151E /* Background */,
+				F8397121276B78F400D8151E /* Background */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
