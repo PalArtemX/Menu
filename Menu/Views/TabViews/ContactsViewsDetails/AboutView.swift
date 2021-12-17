@@ -9,28 +9,33 @@ import SwiftUI
 
 struct AboutView: View {
     var body: some View {
-        VStack {
-            Spacer()
-            // MARK: - Logo
-            Image(systemName: "fork.knife")
-                .font(Font.system(size: 150))
-                .padding()
-                .foregroundColor(.accentColor)
+        ZStack {
+            // MARK: - Background
+            BackgroundView()
             
-            // MARK: - Version
-            Text("Version 1.0, Build 1")
-            
-            Spacer()
-            // MARK: Footer
             VStack {
-                Text("The application was created for a portfolio")
-                    .fontWeight(.light)
-                Text("Created by Artem Paliutin")
-                    .fontWeight(.light)
+                Spacer()
+                // MARK: - Logo
+                Image(systemName: "fork.knife")
+                    .font(Font.system(size: 150))
+                    .padding()
+                    .foregroundColor(.accentColor)
+                
+                // MARK: - Version
+                Text("Version 1.0, Build 1")
+                
+                Spacer()
+                // MARK: Footer
+                VStack {
+                    Text("The application was created for a portfolio")
+                        .fontWeight(.light)
+                    Text("Created by Artem Paliutin")
+                        .fontWeight(.light)
+                }
+                .foregroundColor(.secondary)
+                .font(.caption)
+                
             }
-            .foregroundColor(.secondary)
-            .font(.caption)
-            
         }
     }
 }

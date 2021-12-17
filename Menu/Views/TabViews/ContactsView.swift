@@ -13,36 +13,41 @@ struct ContactsView: View {
     @State private var showAboutView = false
     
     var body: some View {
-        VStack {
-            // MARK: - MapView
-            MapView(vm: vm)
-                .frame(maxHeight: .infinity)
-                .cornerRadius(20)
-            // MARK: - Buttons
-            ButtonsContactsView(vm: vm)
-            Divider()
-            // MARK: - SocialNetworkView
-            SocialNetworkView()
-            Divider()
-            // MARK: - ContactAddressPhoneView
-            ContactAddressPhoneView(vm: vm)
-            Divider()
-            // MARK: - About
-            HStack {
-                Image(systemName: "info.circle")
-                Text("About")
-                    .onTapGesture {
-                        showAboutView.toggle()
+        ZStack {
+            // MARK: - Background
+            BackgroundView()
+            
+            VStack {
+                // MARK: - MapView
+                MapView(vm: vm)
+                    .frame(maxHeight: .infinity)
+                    .cornerRadius(20)
+                // MARK: - Buttons
+                ButtonsContactsView(vm: vm)
+                Divider()
+                // MARK: - SocialNetworkView
+                SocialNetworkView()
+                Divider()
+                // MARK: - ContactAddressPhoneView
+                ContactAddressPhoneView(vm: vm)
+                Divider()
+                // MARK: - About
+                HStack {
+                    Image(systemName: "info.circle")
+                    Text("About")
+                        .onTapGesture {
+                            showAboutView.toggle()
+                        }
+                        .sheet(isPresented: $showAboutView, onDismiss: nil) {
+                            AboutView()
                     }
-                    .sheet(isPresented: $showAboutView, onDismiss: nil) {
-                        AboutView()
                 }
+                .foregroundColor(.accentColor)
+                .font(.subheadline)
+                Divider()
             }
-            .foregroundColor(.accentColor)
-            .font(.subheadline)
-            Divider()
+            .ignoresSafeArea(edges: .top)
         }
-        .ignoresSafeArea(edges: .top)
     }
 }
 
