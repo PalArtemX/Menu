@@ -1,5 +1,5 @@
 //
-//  InformationsView.swift
+//  InfoView.swift
 //  Menu
 //
 //  Created by Artem Paliutin on 18.12.2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct InformationsView: View {
+struct InfoView: View {
     var body: some View {
         ZStack {
             // MARK: - Background
@@ -31,6 +31,6 @@ struct InformationsView: View {
 
 struct InformationsView_Previews: PreviewProvider {
     static var previews: some View {
-        InformationsView()
+        InfoView()
     }
 }

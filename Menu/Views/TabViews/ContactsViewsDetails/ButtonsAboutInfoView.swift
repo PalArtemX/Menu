@@ -33,7 +33,7 @@ struct ButtonsAboutInfoView: View {
                 Text("Info")
             })
                 .sheet(isPresented: $showInfoView, onDismiss: nil) {
-                    InformationsView()
+                    InfoView()
                 }
             // MARK: - About
             Button(action: {
