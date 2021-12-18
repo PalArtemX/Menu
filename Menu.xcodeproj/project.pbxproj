@@ -14,6 +14,9 @@
 		F8397118276B711800D8151E /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8397117276B711800D8151E /* BackgroundView.swift */; };
 		F839711B276B768A00D8151E /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839711A276B768A00D8151E /* ShapeView.swift */; };
 		F8397139276DF9BE00D8151E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8397138276DF9BE00D8151E /* Color.swift */; };
+		F839713B276E06AA00D8151E /* ButtonsAboutInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839713A276E06AA00D8151E /* ButtonsAboutInfoView.swift */; };
+		F84824B9276E0A0700E27AF9 /* InformationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84824B8276E0A0700E27AF9 /* InformationsView.swift */; };
+		F84824BB276E0DE900E27AF9 /* DeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84824BA276E0DE900E27AF9 /* DeliveryView.swift */; };
 		F858A3142766203200062253 /* MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3132766203200062253 /* MenuApp.swift */; };
 		F858A3162766203200062253 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3152766203200062253 /* HomeView.swift */; };
 		F858A3182766203300062253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F858A3172766203300062253 /* Assets.xcassets */; };
@@ -36,6 +39,9 @@
 		F8397117276B711800D8151E /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		F839711A276B768A00D8151E /* ShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 		F8397138276DF9BE00D8151E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F839713A276E06AA00D8151E /* ButtonsAboutInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsAboutInfoView.swift; sourceTree = "<group>"; };
+		F84824B8276E0A0700E27AF9 /* InformationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationsView.swift; sourceTree = "<group>"; };
+		F84824BA276E0DE900E27AF9 /* DeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryView.swift; sourceTree = "<group>"; };
 		F858A3102766203200062253 /* Park Kultury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park Kultury.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F858A3132766203200062253 /* MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuApp.swift; sourceTree = "<group>"; };
 		F858A3152766203200062253 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -188,6 +194,9 @@
 				F858A3372767B8D000062253 /* SocialNetworkView.swift */,
 				F8335A3F27690C77004C5793 /* ButtonsContactsView.swift */,
 				F8397115276B4DCC00D8151E /* AboutView.swift */,
+				F839713A276E06AA00D8151E /* ButtonsAboutInfoView.swift */,
+				F84824B8276E0A0700E27AF9 /* InformationsView.swift */,
+				F84824BA276E0DE900E27AF9 /* DeliveryView.swift */,
 			);
 			path = ContactsViewsDetails;
 			sourceTree = "<group>";
@@ -270,14 +279,17 @@
 				F858A3162766203200062253 /* HomeView.swift in Sources */,
 				F8CF4CD3276A56C900B5DC84 /* MapView.swift in Sources */,
 				F858A3382767B8D000062253 /* SocialNetworkView.swift in Sources */,
+				F84824BB276E0DE900E27AF9 /* DeliveryView.swift in Sources */,
 				F8397116276B4DCC00D8151E /* AboutView.swift in Sources */,
 				F8335A4227693206004C5793 /* Menu.swift in Sources */,
 				F858A3262766534C00062253 /* MenuView.swift in Sources */,
 				F858A32A2766539900062253 /* ContactsView.swift in Sources */,
 				F839711B276B768A00D8151E /* ShapeView.swift in Sources */,
+				F839713B276E06AA00D8151E /* ButtonsAboutInfoView.swift in Sources */,
 				F858A3142766203200062253 /* MenuApp.swift in Sources */,
 				F8335A442769326E004C5793 /* MenuViewModel.swift in Sources */,
 				F858A3362767882000062253 /* MarkerInfoView.swift in Sources */,
+				F84824B9276E0A0700E27AF9 /* InformationsView.swift in Sources */,
 				F858A33427677D9F00062253 /* ContactAddressPhoneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

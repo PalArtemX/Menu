@@ -11,6 +11,7 @@ struct SocialNetworkView: View {
     
     let width: CGFloat = 33
     
+    // MARK: URLs
     let vkURL = URL(string: "https://vk.com")
     let facebookURL = URL(string: "https://www.facebook.com")
     let instagramURL = URL(string: "https://www.instagram.com")

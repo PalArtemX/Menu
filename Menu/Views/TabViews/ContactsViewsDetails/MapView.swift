@@ -26,9 +26,9 @@ struct MapView: View {
         span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
     
     // MARK: - locations
-    let locations = [Location(
-        name: "Park Kultury",
-        coordinate: CLLocationCoordinate2D(latitude: 56.242243, longitude: 43.860245))]
+    let locations = [
+        Location(name: "Park Kultury",
+                 coordinate: CLLocationCoordinate2D(latitude: 56.242243, longitude: 43.860245))]
     
     var body: some View {
         // MARK: - Map

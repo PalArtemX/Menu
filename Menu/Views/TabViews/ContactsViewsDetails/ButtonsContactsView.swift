@@ -14,7 +14,6 @@ struct ButtonsContactsView: View {
     var body: some View {
         HStack {
             // MARK: - Call
-            // FIXME: - Hard cod tel
             Link(destination: URL(string: "tel:\(vm.menu.numberPhone)")!) {
                 Image(systemName: "phone")
                 Text("Call")
@@ -28,7 +27,7 @@ struct ButtonsContactsView: View {
             }
         }
         .font(.headline)
-        .buttonStyle(.bordered)
+        .buttonStyle(.borderedProminent)
         .tint(.orange)
         .buttonBorderShape(.capsule)
         .padding()

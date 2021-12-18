@@ -20,7 +20,7 @@ struct ContactAddressPhoneView: View {
                     .foregroundColor(.accentColor)
                     .padding(.bottom)
 
-                // MARK: - OpeningHours
+                // MARK: - Opening Hours
                 HStack {
                     Image(systemName: "clock")
                     Text(vm.menu.openingHours)

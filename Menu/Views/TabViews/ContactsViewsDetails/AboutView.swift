@@ -49,7 +49,7 @@ struct AboutView: View {
 
 
 
-struct InfoView_Previews: PreviewProvider {
+struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             AboutView()
