@@ -9,7 +9,12 @@ import SwiftUI
 
 struct MenuView: View {
     var body: some View {
-        Image(systemName: "fork.knife")
+        ZStack {
+            // MARK: - Background
+            BackgroundView()
+            
+            Image(systemName: "fork.knife")
+        }
     }
 }
 

@@ -13,7 +13,7 @@ struct InformationsView: View {
             // MARK: - Background
             BackgroundView()
             
-            Text("Information")
+            Image(systemName: "info.circle")
                 .font(.largeTitle)
                 .foregroundColor(.orange)
         }

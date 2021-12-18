@@ -25,7 +25,7 @@ struct ButtonsAboutInfoView: View {
                 .sheet(isPresented: $showDeliveryView, onDismiss: nil) {
                     DeliveryView()
                 }
-            // MARK: - Informations
+            // MARK: - Info
             Button(action: {
                 showInfoView.toggle()
             }, label: {

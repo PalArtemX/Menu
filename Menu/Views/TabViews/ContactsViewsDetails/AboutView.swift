@@ -25,7 +25,7 @@ struct AboutView: View {
                 Text("Version 1.0, Build 1")
                 
                 Spacer()
-                // MARK: Footer
+                // MARK: - Footer
                 VStack {
                     Text("The application was created for a portfolio")
                         .fontWeight(.light)

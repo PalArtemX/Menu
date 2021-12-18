@@ -13,9 +13,9 @@ struct DeliveryView: View {
             // MARK: - Background
             BackgroundView()
             
-            Text("Delivery")
+            Image(systemName: "shippingbox")
                 .font(.largeTitle)
-            .foregroundColor(.orange)
+                .foregroundColor(.orange)
         }
     }
 }

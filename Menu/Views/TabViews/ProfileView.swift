@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        Image(systemName: "person")
+        ZStack {
+            // MARK: - Background
+            BackgroundView()
+            
+            Image(systemName: "person")
+        }
     }
 }
 

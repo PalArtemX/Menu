@@ -9,7 +9,12 @@ import SwiftUI
 
 struct CartView: View {
     var body: some View {
-        Image(systemName: "cart")
+        ZStack {
+            // MARK: - Background
+            BackgroundView()
+            
+            Image(systemName: "cart")
+        }
     }
 }
 
