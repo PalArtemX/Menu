@@ -1,5 +1,5 @@
 //
-//  ShapeLogoView.swift
+//  ShapeView.swift
 //  Menu
 //
 //  Created by Artem Paliutin on 16.12.2021.
@@ -13,23 +13,25 @@ struct Logo: Shape {
         Path { path in
             
             path.move(to: CGPoint(x: rect.minX, y: rect.minY))
-            path.addLine(to: CGPoint(x: rect.minY, y: rect.minY))
-            path.addLine(to: CGPoint(x: rect.midX / 2, y: rect.midY))
+            path.addLine(to: CGPoint(x: rect.midX, y: rect.midY))
             path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
-            path.addLine(to: CGPoint(x: rect.minX, y: rect.minY))
             
-            path.addArc(center: CGPoint(x: rect.midX + 30, y:rect.midY), radius: rect.width / 3, startAngle: .degrees(0), endAngle: .degrees(360), clockwise: false)
-        
+            
+            path.move(to: CGPoint(x: rect.midX, y: rect.midY))
+            path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+            path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
+            
         }
     }
 }
 
-// MARK: - ShapeLogoView
-struct ShapeLogoView: View {
+// MARK: - ShapeView
+struct ShapeView: View {
     var body: some View {
         Logo()
-            .foregroundColor(.accentColor)
+            .foregroundColor(.green)
             //.frame(width: 200, height: 200)
+            .padding()
     }
 }
 
@@ -43,6 +45,6 @@ struct ShapeLogoView: View {
 
 struct ShapeLogoView_Previews: PreviewProvider {
     static var previews: some View {
-        ShapeLogoView()
+        ShapeView()
     }
 }
