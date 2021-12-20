@@ -18,6 +18,9 @@ struct PromotionView: View {
             HStack {
                 ForEach(0..<vm.menu.countPromoImage) { count in
                     Image("Promo\(count)")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 75)
                         .cornerRadius(10)
                         .onTapGesture {
                             vm.menu.selectedPromoImage = count
@@ -33,7 +36,7 @@ struct PromotionView: View {
            
             
         }
-        .padding()
+        .padding(.vertical)
     }
 }
 

@@ -18,7 +18,7 @@ class MenuViewModel: ObservableObject {
         addressCafe: "Molodegny Prospect 2A",
         openingHours: "10:00 - 23:00",
         selectedTagDeliveryOrRestaurant: 1,
-        countPromoImage: 3,
+        countPromoImage: 8,
         selectedPromoImage: 1)
     
     

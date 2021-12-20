@@ -28,7 +28,7 @@ struct PickerDeliveryOrRestaurant: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 6)
                     .foregroundColor(.accentColor.opacity(0.65))
-                    .frame(width: .infinity, height: 50)
+                    .frame(height: 50)
                 
                 if vm.menu.selectedTagDeliveryOrRestaurant == 1 {
                     HStack {
