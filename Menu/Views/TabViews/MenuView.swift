@@ -24,6 +24,7 @@ struct MenuView: View {
                 PickerDeliveryOrRestaurant(vm: vm)
                 
                 // MARK: - Promotion
+                PromotionView(vm: vm)
                 
                 // MARK: - often ordered
                 

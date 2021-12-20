@@ -17,8 +17,7 @@ struct HeaderLogoView: View {
                 Image(systemName: "fork.knife")
                 Text(vm.menu.nameCafe)
             }
-            
-        .font(.title)
+            .font(.title)
             Text("Restaurant & Delivery")
                 .font(.subheadline)
                 .fontWeight(.light)
@@ -38,6 +37,14 @@ struct HeaderLogoView: View {
 
 struct HeaderLogoView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderLogoView(vm: MenuViewModel())
+        Group {
+            HeaderLogoView(vm: MenuViewModel())
+                .previewLayout(.sizeThatFits)
+                .padding()
+            HeaderLogoView(vm: MenuViewModel())
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }

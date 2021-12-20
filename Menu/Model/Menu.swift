@@ -21,6 +21,8 @@ struct Menu {
     
     // MARK: - MenuView
     var selectedTagDeliveryOrRestaurant: Int
+    var countPromoImage: Int
+    var selectedPromoImage: Int
     
     
 }

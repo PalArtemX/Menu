@@ -15,10 +15,17 @@ struct MarkerInfoView: View {
     var body: some View {
         VStack {
             // MARK: - Name
-            HStack {
-                Text(vm.menu.nameCafe)
-                    .font(.callout)
-                Image(systemName: "fork.knife")
+            VStack(alignment: .trailing) {
+                HStack {
+                    Image(systemName: "fork.knife")
+                    Text(vm.menu.nameCafe)
+                        
+                    
+                }
+                .font(.title3)
+                Text("Restaurant & Delivery")
+                    .font(.caption2)
+                    .fontWeight(.light)
             }
             // MARK: - Marker
             Image(systemName: "mappin.and.ellipse")

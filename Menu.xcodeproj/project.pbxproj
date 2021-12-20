@@ -29,7 +29,9 @@
 		F858A33427677D9F00062253 /* ContactAddressPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A33327677D9F00062253 /* ContactAddressPhoneView.swift */; };
 		F858A3362767882000062253 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3352767882000062253 /* MarkerInfoView.swift */; };
 		F858A3382767B8D000062253 /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3372767B8D000062253 /* SocialNetworkView.swift */; };
+		F87FA2222770F17A007EB089 /* PromoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87FA2212770F17A007EB089 /* PromoImageView.swift */; };
 		F88112502770AB320093ED49 /* HeaderLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F881124F2770AB320093ED49 /* HeaderLogoView.swift */; };
+		F88112522770C4570093ED49 /* PromotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88112512770C4570093ED49 /* PromotionView.swift */; };
 		F8CF4CD3276A56C900B5DC84 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3312767623F00062253 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +60,9 @@
 		F858A33327677D9F00062253 /* ContactAddressPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAddressPhoneView.swift; sourceTree = "<group>"; };
 		F858A3352767882000062253 /* MarkerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
 		F858A3372767B8D000062253 /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
+		F87FA2212770F17A007EB089 /* PromoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoImageView.swift; sourceTree = "<group>"; };
 		F881124F2770AB320093ED49 /* HeaderLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLogoView.swift; sourceTree = "<group>"; };
+		F88112512770C4570093ED49 /* PromotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 			children = (
 				F858A3152766203200062253 /* HomeView.swift */,
 				F858A3242766518000062253 /* TabViews */,
+				F87FA2232770FD59007EB089 /* ViewsComponents */,
 				F8397121276B78F400D8151E /* Background */,
 			);
 			path = Views;
@@ -186,7 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				F8414D6E2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift */,
-				F881124F2770AB320093ED49 /* HeaderLogoView.swift */,
+				F88112512770C4570093ED49 /* PromotionView.swift */,
+				F87FA2212770F17A007EB089 /* PromoImageView.swift */,
 			);
 			path = MenuViewsDetails;
 			sourceTree = "<group>";
@@ -205,6 +211,14 @@
 				F84824BA276E0DE900E27AF9 /* DeliveryView.swift */,
 			);
 			path = ContactsViewsDetails;
+			sourceTree = "<group>";
+		};
+		F87FA2232770FD59007EB089 /* ViewsComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F881124F2770AB320093ED49 /* HeaderLogoView.swift */,
+			);
+			path = ViewsComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +297,7 @@
 				F8335A4027690C77004C5793 /* ButtonsContactsView.swift in Sources */,
 				F8397139276DF9BE00D8151E /* Color.swift in Sources */,
 				F858A3162766203200062253 /* HomeView.swift in Sources */,
+				F88112522770C4570093ED49 /* PromotionView.swift in Sources */,
 				F8CF4CD3276A56C900B5DC84 /* MapView.swift in Sources */,
 				F858A3382767B8D000062253 /* SocialNetworkView.swift in Sources */,
 				F84824BB276E0DE900E27AF9 /* DeliveryView.swift in Sources */,
@@ -292,6 +307,7 @@
 				F858A3262766534C00062253 /* MenuView.swift in Sources */,
 				F858A32A2766539900062253 /* ContactsView.swift in Sources */,
 				F839711B276B768A00D8151E /* ShapeView.swift in Sources */,
+				F87FA2222770F17A007EB089 /* PromoImageView.swift in Sources */,
 				F839713B276E06AA00D8151E /* ButtonsAboutInfoView.swift in Sources */,
 				F88112502770AB320093ED49 /* HeaderLogoView.swift in Sources */,
 				F858A3142766203200062253 /* MenuApp.swift in Sources */,

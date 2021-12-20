@@ -10,25 +10,25 @@ import SwiftUI
 struct PickerDeliveryOrRestaurant: View {
     
     @ObservedObject var vm: MenuViewModel
+    @State private var showMapRestaurant = false
     
     var body: some View {
         VStack {
             // MARK: - Picker
             Picker("", selection: $vm.menu.selectedTagDeliveryOrRestaurant) {
-                // MARK: - Delivery
                 Text("Delivery")
                     .tag(1)
-                // MARK: - Restaurant
                 Text("Restaurant")
                     .tag(2)
             }
             .pickerStyle(.segmented)
+            
             Divider()
             // MARK: - selectedTagDeliveryOrRestaurant
             ZStack {
                 RoundedRectangle(cornerRadius: 6)
+                    .foregroundColor(.accentColor.opacity(0.65))
                     .frame(width: .infinity, height: 50)
-                    .foregroundColor(.accentColor.opacity(0.7))
                 
                 if vm.menu.selectedTagDeliveryOrRestaurant == 1 {
                     HStack {
@@ -41,6 +41,9 @@ struct PickerDeliveryOrRestaurant: View {
                         Image(systemName: "fork.knife")
                         Text(vm.menu.addressCafe)
                             .lineLimit(2)
+                    }
+                    .onTapGesture {
+                        vm.menu.selectedTab = 2
                     }
                 }
             }
