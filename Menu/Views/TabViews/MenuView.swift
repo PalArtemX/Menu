@@ -8,12 +8,28 @@
 import SwiftUI
 
 struct MenuView: View {
+    
+    @ObservedObject var vm: MenuViewModel
+    
     var body: some View {
         ZStack {
             // MARK: - Background
             BackgroundView()
             
-            Image(systemName: "fork.knife")
+            VStack {
+                // MARK: - Header
+                HeaderLogoView(vm: vm)
+
+                // MARK: - delivery or restaurant
+                PickerDeliveryOrRestaurant(vm: vm)
+                
+                // MARK: - Promotion
+                
+                // MARK: - often ordered
+                
+                // MARK: - menu
+                Spacer()
+            }
         }
     }
 }
@@ -29,6 +45,6 @@ struct MenuView: View {
 
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuView()
+        MenuView(vm: MenuViewModel())
     }
 }

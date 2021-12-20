@@ -15,8 +15,9 @@ class MenuViewModel: ObservableObject {
         selectedTab: 0,
         numberPhone: "7777777",
         nameCafe: "Park Kultyry",
-        address: "Molodegny Prospect 2A",
-        openingHours: "10:00 - 23:00")
+        addressCafe: "Molodegny Prospect 2A",
+        openingHours: "10:00 - 23:00",
+        selectedTagDeliveryOrRestaurant: 1)
     
     
 }

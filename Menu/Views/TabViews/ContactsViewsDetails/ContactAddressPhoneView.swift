@@ -15,7 +15,7 @@ struct ContactAddressPhoneView: View {
         ZStack {
             VStack {
                 // MARK: - Address
-                Text(vm.menu.address)
+                Text(vm.menu.addressCafe)
                     .font(.headline)
                     .foregroundColor(.accentColor)
                     .padding(.bottom)

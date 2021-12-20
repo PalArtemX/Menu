@@ -16,8 +16,11 @@ struct Menu {
     // MARK: - ContactsView
     var numberPhone: String
     var nameCafe: String
-    var address: String
+    var addressCafe: String
     var openingHours: String
+    
+    // MARK: - MenuView
+    var selectedTagDeliveryOrRestaurant: Int
     
     
 }

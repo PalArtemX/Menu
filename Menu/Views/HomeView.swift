@@ -13,7 +13,7 @@ struct HomeView: View {
     var body: some View {
         TabView(selection: $vm.menu.selectedTab) {
             // MARK: - Menu
-            MenuView()
+            MenuView(vm: vm)
                 .tabItem {
                     Image(systemName: "fork.knife")
                     Text("Menu")

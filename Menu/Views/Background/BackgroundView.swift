@@ -23,12 +23,12 @@ struct BackgroundView: View {
             BackgroundShape()
                 .opacity(opacity)
                 .foregroundColor(.colorTheme.background2)
-                .rotationEffect(Angle(degrees: isShow ? 0 : 270))
+                .rotationEffect(Angle(degrees: isShow ? 20 : 340))
             
             BackgroundShape()
                 .opacity(opacity)
                 .foregroundColor(.colorTheme.background3)
-                .rotationEffect(Angle(degrees: isShow ? 270 : 0))
+                .rotationEffect(Angle(degrees: isShow ? 340 : 20))
 
             BackgroundShape()
                 .opacity(opacity)

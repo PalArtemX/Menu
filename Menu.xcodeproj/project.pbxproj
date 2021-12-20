@@ -15,6 +15,7 @@
 		F839711B276B768A00D8151E /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839711A276B768A00D8151E /* ShapeView.swift */; };
 		F8397139276DF9BE00D8151E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8397138276DF9BE00D8151E /* Color.swift */; };
 		F839713B276E06AA00D8151E /* ButtonsAboutInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839713A276E06AA00D8151E /* ButtonsAboutInfoView.swift */; };
+		F8414D6F2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8414D6E2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift */; };
 		F84824B9276E0A0700E27AF9 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84824B8276E0A0700E27AF9 /* InfoView.swift */; };
 		F84824BB276E0DE900E27AF9 /* DeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84824BA276E0DE900E27AF9 /* DeliveryView.swift */; };
 		F858A3142766203200062253 /* MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3132766203200062253 /* MenuApp.swift */; };
@@ -28,6 +29,7 @@
 		F858A33427677D9F00062253 /* ContactAddressPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A33327677D9F00062253 /* ContactAddressPhoneView.swift */; };
 		F858A3362767882000062253 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3352767882000062253 /* MarkerInfoView.swift */; };
 		F858A3382767B8D000062253 /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3372767B8D000062253 /* SocialNetworkView.swift */; };
+		F88112502770AB320093ED49 /* HeaderLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F881124F2770AB320093ED49 /* HeaderLogoView.swift */; };
 		F8CF4CD3276A56C900B5DC84 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3312767623F00062253 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,7 @@
 		F839711A276B768A00D8151E /* ShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 		F8397138276DF9BE00D8151E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F839713A276E06AA00D8151E /* ButtonsAboutInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsAboutInfoView.swift; sourceTree = "<group>"; };
+		F8414D6E2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDeliveryOrRestaurant.swift; sourceTree = "<group>"; };
 		F84824B8276E0A0700E27AF9 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		F84824BA276E0DE900E27AF9 /* DeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryView.swift; sourceTree = "<group>"; };
 		F858A3102766203200062253 /* Park Kultury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park Kultury.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +58,7 @@
 		F858A33327677D9F00062253 /* ContactAddressPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAddressPhoneView.swift; sourceTree = "<group>"; };
 		F858A3352767882000062253 /* MarkerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
 		F858A3372767B8D000062253 /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
+		F881124F2770AB320093ED49 /* HeaderLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,8 @@
 		F858A32D276761AE00062253 /* MenuViewsDetails */ = {
 			isa = PBXGroup;
 			children = (
+				F8414D6E2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift */,
+				F881124F2770AB320093ED49 /* HeaderLogoView.swift */,
 			);
 			path = MenuViewsDetails;
 			sourceTree = "<group>";
@@ -281,11 +287,13 @@
 				F858A3382767B8D000062253 /* SocialNetworkView.swift in Sources */,
 				F84824BB276E0DE900E27AF9 /* DeliveryView.swift in Sources */,
 				F8397116276B4DCC00D8151E /* AboutView.swift in Sources */,
+				F8414D6F2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift in Sources */,
 				F8335A4227693206004C5793 /* Menu.swift in Sources */,
 				F858A3262766534C00062253 /* MenuView.swift in Sources */,
 				F858A32A2766539900062253 /* ContactsView.swift in Sources */,
 				F839711B276B768A00D8151E /* ShapeView.swift in Sources */,
 				F839713B276E06AA00D8151E /* ButtonsAboutInfoView.swift in Sources */,
+				F88112502770AB320093ED49 /* HeaderLogoView.swift in Sources */,
 				F858A3142766203200062253 /* MenuApp.swift in Sources */,
 				F8335A442769326E004C5793 /* MenuViewModel.swift in Sources */,
 				F858A3362767882000062253 /* MarkerInfoView.swift in Sources */,
