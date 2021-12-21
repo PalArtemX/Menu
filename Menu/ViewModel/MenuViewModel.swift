@@ -32,27 +32,29 @@ class MenuViewModel: ObservableObject {
     ]
     
     @Published var pizzaMenu: [RestaurantMenu] = [
-    
+        RestaurantMenu(image: Image("pizza"), price: 5.50, name: "Quattro Stagioni"),
+        RestaurantMenu(image: Image("pizza1"), price: 6.00, name: "Montanara"),
+        RestaurantMenu(image: Image("pizza2"), price: 4.50, name: "Carbonara")
     ]
     
     @Published var meatMenu: [RestaurantMenu] = [
-    
-    ]
-    
-    @Published var burgerMenu: [RestaurantMenu] = [
-    
+        RestaurantMenu(image: Image("meat"), price: 11.00, name: "Spareribs"),
+        RestaurantMenu(image: Image("meat2"), price: 9.00, name: "Carpaccio"),
+        RestaurantMenu(image: Image("meat3"), price: 12.00, name: "Steak")
     ]
     
     @Published var soupMenu: [RestaurantMenu] = [
-    
+        RestaurantMenu(image: Image("soup"), price: 11.5, name: "lagman")
     ]
     
     @Published var dessertMenu: [RestaurantMenu] = [
-    
+        RestaurantMenu(image: Image("desert"), price: 3.5, name: "Cheesecake"),
+        RestaurantMenu(image: Image("desert2"), price: 4.5, name: "Ice Cream"),
+        RestaurantMenu(image: Image("desert3"), price: 3.7, name: "Cake")
     ]
     
     @Published var drinkMenu: [RestaurantMenu] = [
-    
+        RestaurantMenu(image: Image("drink"), price: 1.00, name: "Juices")
     ]
     
 }

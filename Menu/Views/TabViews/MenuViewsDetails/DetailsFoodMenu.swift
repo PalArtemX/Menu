@@ -40,8 +40,8 @@ struct DetailsFoodMenu: View {
                             
                     }
                     .padding(3)
-                    .background(Color.orange.opacity(0.5))
-                    .foregroundColor(.white)
+                    .background(Color.orange.opacity(0.6))
+                    .foregroundColor(.black)
                     .font(.subheadline)
                     .cornerRadius(10)
                     .padding(4)

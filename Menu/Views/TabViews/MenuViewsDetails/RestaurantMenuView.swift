@@ -13,23 +13,57 @@ struct RestaurantMenuView: View {
     
     var body: some View {
         List {
+            // MARK: - Salad
             Section("Salad") {
                 ForEach(vm.salatMenu) { item in
                     DetailsFoodMenu(name: item.name, image: item.image, price: item.price) {
                         // CODE
                     }
                 }
-                
-                
-                
-                
+            }
+            // MARK: - Meat
+            Section("Meat") {
+                ForEach(vm.meatMenu) { item in
+                    DetailsFoodMenu(name: item.name, image: item.image, price: item.price) {
+                        // CODE
+                    }
+                }
+            }
+            // MARK: - Pizza
+            Section("Pizza") {
+                ForEach(vm.pizzaMenu) { item in
+                    DetailsFoodMenu(name: item.name, image: item.image, price: item.price) {
+                        // CODE
+                    }
+                }
+            }
+            // MARK: - Soup
+            Section("Soup") {
+                ForEach(vm.soupMenu) { item in
+                    DetailsFoodMenu(name: item.name, image: item.image, price: item.price) {
+                        //
+                    }
+                }
+            }
+            // MARK: - Dessert
+            Section("Dessert") {
+                ForEach(vm.dessertMenu) { item in
+                    DetailsFoodMenu(name: item.name, image: item.image, price: item.price) {
+                        //
+                    }
+                }
+            }
+            // MARK: - Drinks
+            Section("Drinks") {
+                ForEach(vm.drinkMenu) { item in
+                    DetailsFoodMenu(name: item.name, image: item.image, price: item.price) {
+                        //
+                    }
+                }
             }
             
-            
-
         }
         .ignoresSafeArea()
-        //.foregroundColor(.accentColor)
         .listStyle(.plain)
     }
 }
