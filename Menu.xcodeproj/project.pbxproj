@@ -32,6 +32,7 @@
 		F87FA2222770F17A007EB089 /* PromoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87FA2212770F17A007EB089 /* PromoImageView.swift */; };
 		F88112502770AB320093ED49 /* HeaderLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F881124F2770AB320093ED49 /* HeaderLogoView.swift */; };
 		F88112522770C4570093ED49 /* PromotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88112512770C4570093ED49 /* PromotionView.swift */; };
+		F8BF66382771D36D000ACB7D /* RestaurantMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF66372771D36D000ACB7D /* RestaurantMenuView.swift */; };
 		F8CF4CD3276A56C900B5DC84 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3312767623F00062253 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		F87FA2212770F17A007EB089 /* PromoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoImageView.swift; sourceTree = "<group>"; };
 		F881124F2770AB320093ED49 /* HeaderLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLogoView.swift; sourceTree = "<group>"; };
 		F88112512770C4570093ED49 /* PromotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionView.swift; sourceTree = "<group>"; };
+		F8BF66372771D36D000ACB7D /* RestaurantMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				F8414D6E2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift */,
 				F88112512770C4570093ED49 /* PromotionView.swift */,
 				F87FA2212770F17A007EB089 /* PromoImageView.swift */,
+				F8BF66372771D36D000ACB7D /* RestaurantMenuView.swift */,
 			);
 			path = MenuViewsDetails;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				F8397139276DF9BE00D8151E /* Color.swift in Sources */,
 				F858A3162766203200062253 /* HomeView.swift in Sources */,
 				F88112522770C4570093ED49 /* PromotionView.swift in Sources */,
+				F8BF66382771D36D000ACB7D /* RestaurantMenuView.swift in Sources */,
 				F8CF4CD3276A56C900B5DC84 /* MapView.swift in Sources */,
 				F858A3382767B8D000062253 /* SocialNetworkView.swift in Sources */,
 				F84824BB276E0DE900E27AF9 /* DeliveryView.swift in Sources */,
