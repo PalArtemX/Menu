@@ -20,7 +20,7 @@ struct PromotionView: View {
                     Image("Promo\(count)")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 75)
+                        .frame(width: 65)
                         .cornerRadius(10)
                         .onTapGesture {
                             vm.menu.selectedPromoImage = count
@@ -36,7 +36,6 @@ struct PromotionView: View {
            
             
         }
-        .padding(.vertical)
     }
 }
 

@@ -22,7 +22,7 @@ struct MenuView: View {
 
                 // MARK: - delivery or restaurant
                 PickerDeliveryOrRestaurant(vm: vm)
-                
+                Divider()
                 // MARK: - Promotion
                 PromotionView(vm: vm)
                 

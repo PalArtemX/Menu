@@ -27,21 +27,23 @@ struct PickerDeliveryOrRestaurant: View {
             // MARK: - selectedTagDeliveryOrRestaurant
             ZStack {
                 RoundedRectangle(cornerRadius: 6)
-                    .foregroundColor(.accentColor.opacity(0.65))
-                    .frame(height: 50)
+                    .foregroundColor(.accentColor.opacity(0.5))
+                    .frame(height: 25)
                 
                 if vm.menu.selectedTagDeliveryOrRestaurant == 1 {
                     HStack {
                         Image(systemName: "shippingbox")
                         Text("Address delivery")
-                            .lineLimit(2)
+                            .lineLimit(1)
                     }
+                    .font(.caption)
                 } else if vm.menu.selectedTagDeliveryOrRestaurant == 2 {
                     HStack {
                         Image(systemName: "fork.knife")
                         Text(vm.menu.addressCafe)
-                            .lineLimit(2)
+                            .lineLimit(1)
                     }
+                    .font(.caption)
                     .onTapGesture {
                         vm.menu.selectedTab = 2
                     }
@@ -49,7 +51,7 @@ struct PickerDeliveryOrRestaurant: View {
             }
             .font(.subheadline)
         }
-        .padding()
+        .padding(.horizontal)
     }
 }
 

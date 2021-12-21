@@ -28,6 +28,7 @@ struct RestaurantMenuView: View {
             
 
         }
+        .ignoresSafeArea()
         //.foregroundColor(.accentColor)
         .listStyle(.plain)
     }

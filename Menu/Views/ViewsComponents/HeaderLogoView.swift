@@ -17,9 +17,9 @@ struct HeaderLogoView: View {
                 Image(systemName: "fork.knife")
                 Text(vm.menu.nameCafe)
             }
-            .font(.title)
+            .font(.title3)
             Text("Restaurant & Delivery")
-                .font(.subheadline)
+                .font(.caption2)
                 .fontWeight(.light)
         }
         .foregroundColor(.accentColor)

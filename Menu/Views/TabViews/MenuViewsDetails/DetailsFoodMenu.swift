@@ -17,45 +17,60 @@ struct DetailsFoodMenu: View {
     
     
     var body: some View {
-        HStack {
+        HStack(alignment: .bottom) {
+            
+            HStack {
+                ZStack(alignment: .topLeading) {
+                    // MARK: - image
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 200)
+                        .cornerRadius(5)
+                    
+                    // MARK: - Price and Name
+                    HStack {
+                        // MARK: - price
+                        Text("\(price, specifier: "%.2f") $")
+                            .font(.headline)
+                        
+                        // MARK: - name
+                        Text(name)
+                            .fontWeight(.bold)
+                            
+                    }
+                    .padding(3)
+                    .background(Color.orange.opacity(0.5))
+                    .foregroundColor(.white)
+                    .font(.subheadline)
+                    .cornerRadius(10)
+                    .padding(4)
+                }
+                Spacer()
+            }
+            
+            // MARK:  Stepper and Button
             VStack {
                 // MARK: - Stepper
                 Stepper(value: $quantity, in: 1...5) {
-                    Text("x \(quantity, specifier: "%.0f") ")
-                        .font(.headline)
-                        .foregroundColor(.orange)
+                    Text("X \(quantity, specifier: "%.0f")")
+                        .foregroundColor(.gray)
+                        .font(.subheadline)
+                        .fontWeight(.black)
+                        
                 }
-                // MARK: - Image
-                image
-                    .resizable()
-                    .cornerRadius(7)
-                    .scaledToFit()
-                    .frame(height: 170)
-            }
-            VStack(alignment: .trailing) {
-                // MARK: - Price
-                Text("\(price, specifier: "%.2f") $")
-                    .font(.headline)
-                    .foregroundColor(.gray)
-                // MARK: - Name
-                Text(name)
-                    .font(.headline)
-                // MARK: - Add to Cart
+                Spacer()
+                // MARK: - Button
                 Button {
                     action()
                 } label: {
                     VStack {
-                        HStack {
-                            Text("\(price * quantity, specifier: "%.2f") $")
-                        }
                         Image(systemName: "cart")
-                            .font(.largeTitle)
-                        //Text("Add to Cart")
+                        Text("\(price * quantity, specifier: "%.2f") $")
                     }
-                    
+                    .font(.headline)
                 }
-                .buttonStyle(.bordered)
-
+            .buttonStyle(.bordered)
             }
         }
     }
@@ -74,13 +89,15 @@ struct DetailsFoodMenu_Previews: PreviewProvider {
     static var previews: some View {
         
         Group {
-            DetailsFoodMenu(name: "Garden fresh", image: Image("salat"), price: 10.20, action: {})
+            DetailsFoodMenu(name: "Garden Fresh", image: Image("salat"), price: 10.20, action: {})
                 .previewLayout(.sizeThatFits)
-            .padding()
-            DetailsFoodMenu(name: "Garden fresh", image: Image("salat"), price: 10.20, action: {})
+                .padding()
+                
+            DetailsFoodMenu(name: "Garden Fresh", image: Image("salat"), price: 10.20, action: {})
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
                 .padding()
         }
+        .frame(height: 160)
     }
 }
