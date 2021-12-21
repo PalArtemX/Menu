@@ -14,63 +14,18 @@ struct RestaurantMenuView: View {
     var body: some View {
         List {
             Section("Salad") {
-                HStack {
-                    vm.restaurantMenu[0].image
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 170)
-                    VStack {
-                        Text(vm.restaurantMenu[0].name)
-                        Text("\(vm.restaurantMenu[0].price, specifier: "%.2f") $")
-                        Button {
-                            //
-                        } label: {
-                            Text("Bue")
-                        }
-
+                ForEach(vm.salatMenu) { item in
+                    DetailsFoodMenu(name: item.name, image: item.image, price: item.price) {
+                        // CODE
                     }
                 }
                 
                 
-                HStack {
-                    vm.restaurantMenu[0].image
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 170)
-                    VStack {
-                        Text(vm.restaurantMenu[0].name)
-                        Text("\(vm.restaurantMenu[0].price, specifier: "%.2f") $")
-                        Button {
-                            //
-                        } label: {
-                            Text("Bue")
-                        }
-
-                    }
-                }
+                
                 
             }
             
-            Section {
-                HStack {
-                    vm.restaurantMenu[0].image
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 170)
-                    VStack {
-                        Text(vm.restaurantMenu[0].name)
-                        Text("\(vm.restaurantMenu[0].price, specifier: "%.2f") $")
-                        Button {
-                            //
-                        } label: {
-                            Text("Bue")
-                        }
-
-                    }
-                }
-            } header: {
-                Image(systemName: "plus")
-            }
+            
 
         }
         //.foregroundColor(.accentColor)

@@ -34,6 +34,7 @@
 		F88112522770C4570093ED49 /* PromotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88112512770C4570093ED49 /* PromotionView.swift */; };
 		F8BF66382771D36D000ACB7D /* RestaurantMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF66372771D36D000ACB7D /* RestaurantMenuView.swift */; };
 		F8BF663A2771E19C000ACB7D /* RestaurantMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF66392771E19C000ACB7D /* RestaurantMenu.swift */; };
+		F8BF663C2771E26E000ACB7D /* DetailsFoodMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF663B2771E26E000ACB7D /* DetailsFoodMenu.swift */; };
 		F8CF4CD3276A56C900B5DC84 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3312767623F00062253 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		F88112512770C4570093ED49 /* PromotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionView.swift; sourceTree = "<group>"; };
 		F8BF66372771D36D000ACB7D /* RestaurantMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuView.swift; sourceTree = "<group>"; };
 		F8BF66392771E19C000ACB7D /* RestaurantMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenu.swift; sourceTree = "<group>"; };
+		F8BF663B2771E26E000ACB7D /* DetailsFoodMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFoodMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 				F88112512770C4570093ED49 /* PromotionView.swift */,
 				F87FA2212770F17A007EB089 /* PromoImageView.swift */,
 				F8BF66372771D36D000ACB7D /* RestaurantMenuView.swift */,
+				F8BF663B2771E26E000ACB7D /* DetailsFoodMenu.swift */,
 			);
 			path = MenuViewsDetails;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				F839713B276E06AA00D8151E /* ButtonsAboutInfoView.swift in Sources */,
 				F88112502770AB320093ED49 /* HeaderLogoView.swift in Sources */,
 				F858A3142766203200062253 /* MenuApp.swift in Sources */,
+				F8BF663C2771E26E000ACB7D /* DetailsFoodMenu.swift in Sources */,
 				F8335A442769326E004C5793 /* MenuViewModel.swift in Sources */,
 				F858A3362767882000062253 /* MarkerInfoView.swift in Sources */,
 				F84824B9276E0A0700E27AF9 /* InfoView.swift in Sources */,
