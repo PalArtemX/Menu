@@ -23,6 +23,8 @@ class MenuViewModel: ObservableObject {
         countPromoImage: 8,
         selectedPromoImage: 1)
     
+    
+    
     // MARK: - Restaurant Menu
     @Published var salatMenu: [RestaurantMenu] = [
         RestaurantMenu(image: Image("salat"), price: 3.50, name: "Garden Fresh"),
@@ -44,7 +46,7 @@ class MenuViewModel: ObservableObject {
     ]
     
     @Published var soupMenu: [RestaurantMenu] = [
-        RestaurantMenu(image: Image("soup"), price: 11.5, name: "lagman")
+        RestaurantMenu(image: Image("soup"), price: 11.5, name: "Lagman")
     ]
     
     @Published var dessertMenu: [RestaurantMenu] = [
