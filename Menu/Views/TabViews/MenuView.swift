@@ -29,7 +29,7 @@ struct MenuView: View {
                 // MARK: - often ordered
                 
                 // MARK: - menu
-                
+                RestaurantMenuView(vm: vm)
                 Spacer()
             }
         }

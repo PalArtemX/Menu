@@ -7,9 +7,11 @@
 
 import Foundation
 import MapKit
+import SwiftUI
 
 class MenuViewModel: ObservableObject {
     
+    // MARK: - Menu
     @Published var menu = Menu(
         badgeCart: 1,
         selectedTab: 0,
@@ -20,6 +22,13 @@ class MenuViewModel: ObservableObject {
         selectedTagDeliveryOrRestaurant: 1,
         countPromoImage: 8,
         selectedPromoImage: 1)
+    
+    // MARK: - Restaurant Menu
+    @Published var restaurantMenu: [RestaurantMenu] = [
+        RestaurantMenu(image: Image("salat"), price: 10.30, name: "Salat1"),
+        RestaurantMenu(image: Image("salat2"), price: 5.23, name: "Salat2")
+    ]
+    
     
     
 }
