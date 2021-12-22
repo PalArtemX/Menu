@@ -24,7 +24,7 @@ struct PickerDeliveryOrRestaurant: View {
             .pickerStyle(.segmented)
             
             Divider()
-            // MARK: - selectedTagDeliveryOrRestaurant
+            // MARK: - Selected Tag Delivery Or Restaurant
             ZStack {
                 RoundedRectangle(cornerRadius: 6)
                     .foregroundColor(.accentColor.opacity(0.5))

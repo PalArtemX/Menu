@@ -49,7 +49,7 @@ struct DetailsFoodMenu: View {
                 Spacer()
             }
             
-            // MARK:  Stepper and Button
+            // MARK: Stepper and Button
             VStack {
                 // MARK: - Stepper
                 Stepper(value: $quantity, in: 1...5) {

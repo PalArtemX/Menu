@@ -19,10 +19,9 @@ struct MarkerInfoView: View {
                 HStack {
                     Image(systemName: "fork.knife")
                     Text(vm.menu.nameCafe)
-                        
-                    
                 }
                 .font(.title3)
+                
                 Text("Restaurant & Delivery")
                     .font(.caption2)
                     .fontWeight(.light)

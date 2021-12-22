@@ -20,7 +20,7 @@ struct ButtonsContactsView: View {
             }
             // MARK: - Chat
             Button {
-                //
+                // CODE
             } label: {
                 Image(systemName: "bubble.right")
                 Text("Chat")

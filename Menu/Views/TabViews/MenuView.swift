@@ -17,17 +17,17 @@ struct MenuView: View {
             BackgroundView()
             
             VStack {
-                // MARK: - Header
+                // MARK: - Header Logo
                 HeaderLogoView(vm: vm)
 
-                // MARK: - delivery or restaurant
+                // MARK: - Delivery or Restaurant
                 PickerDeliveryOrRestaurant(vm: vm)
                 Divider()
                 
                 // MARK: - Promotion
                 PromotionView(vm: vm)
                 
-                // MARK: - menu
+                // MARK: - Restaurant Menu
                 RestaurantMenuView(vm: vm)
                 Spacer()
             }
