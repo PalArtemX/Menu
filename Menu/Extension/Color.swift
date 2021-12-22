@@ -10,10 +10,13 @@ import SwiftUI
 
 
 struct ColorTheme {
+    // MARK: - Background Colors
     let background1 = Color("Background1")
     let background2 = Color("Background2")
     let background3 = Color("Background3")
     let background4 = Color("Background4")
+    
+    
 }
 
 
