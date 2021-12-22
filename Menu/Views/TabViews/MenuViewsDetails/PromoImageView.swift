@@ -24,7 +24,7 @@ struct PromoImageView: View {
                 Image("Promo\(vm.menu.selectedPromoImage)")
                     .resizable()
                     .scaledToFit()
-                    .cornerRadius(20)
+                    .cornerRadius(15)
                     .padding()
             }
         }

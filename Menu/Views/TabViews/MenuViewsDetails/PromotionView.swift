@@ -21,7 +21,7 @@ struct PromotionView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 65)
-                        .cornerRadius(10)
+                        .cornerRadius(5)
                         .onTapGesture {
                             vm.menu.selectedPromoImage = count
                             self.showSheetImage.toggle()

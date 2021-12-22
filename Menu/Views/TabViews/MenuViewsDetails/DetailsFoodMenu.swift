@@ -40,10 +40,10 @@ struct DetailsFoodMenu: View {
                             
                     }
                     .padding(3)
-                    .background(Color.orange.opacity(0.6))
-                    .foregroundColor(.black)
+                    .background(Color.black.opacity(0.3))
+                    .foregroundColor(.white)
                     .font(.subheadline)
-                    .cornerRadius(10)
+                    .cornerRadius(5)
                     .padding(4)
                 }
                 Spacer()
@@ -64,11 +64,13 @@ struct DetailsFoodMenu: View {
                 Button {
                     action()
                 } label: {
-                    VStack {
-                        Image(systemName: "cart")
+                    HStack {
                         Text("\(price * quantity, specifier: "%.2f") $")
+                            .fontWeight(.bold)
+                        Image(systemName: "cart")
                     }
-                    .font(.headline)
+                    .padding(.horizontal)
+                    .font(.subheadline)
                 }
             .buttonStyle(.bordered)
             }
