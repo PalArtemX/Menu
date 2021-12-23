@@ -25,6 +25,7 @@ class MenuViewModel: ObservableObject {
     // MARK: - Cart
     @Published var cart: [RestaurantMenu] = []
     
+    // MARK: - init
     init() {
         salatMenu = RestaurantMenuData.salat
         pizzaMenu = RestaurantMenuData.pizza
@@ -36,7 +37,7 @@ class MenuViewModel: ObservableObject {
         menu = Menu(
             selectedTab: 0,
             numberPhone: "7777777",
-            nameCafe: "Park Kultyry",
+            nameCafe: "Park Kultury",
             addressCafe: "Molodegny Prospect 2A",
             openingHours: "10:00 - 23:00",
             selectedTagDeliveryOrRestaurant: 1,
@@ -46,7 +47,7 @@ class MenuViewModel: ObservableObject {
     
     // MARK: - Function
     
-    // deleteCart
+    /// deleteCart
     func deleteCart(indexSet: IndexSet) {
         cart.remove(atOffsets: indexSet)
     }

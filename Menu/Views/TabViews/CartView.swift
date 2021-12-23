@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct CartView: View {
-    
     @ObservedObject var vm: MenuViewModel
     
     var body: some View {
@@ -17,7 +16,7 @@ struct CartView: View {
             BackgroundView()
             
             VStack {
-            // MARK: - Cart List or Cart Is Empty
+                // MARK: - Cart List or Cart Is Empty
                 Spacer()
                 
                 if vm.cart.isEmpty {
@@ -31,14 +30,8 @@ struct CartView: View {
                     }
                     .listStyle(.plain)
                 }
-                
-                
-                
-                
-            
-            
                 Spacer()
-            // MARK: - Place an Order
+                // MARK: - Place an Order
                 Text("Kolichestvo: \(vm.cart.count)")
                 Text("Price:  ")
                 Text("Summa: ")
