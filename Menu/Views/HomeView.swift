@@ -34,7 +34,7 @@ struct HomeView: View {
                 }
                 .tag(2)
             // MARK: - Cart
-            CartView()
+            CartView(vm: vm)
                 .badge(vm.menu.badgeCart)
                 .tabItem {
                     Image(systemName: "cart")

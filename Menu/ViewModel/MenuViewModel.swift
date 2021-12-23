@@ -22,6 +22,8 @@ class MenuViewModel: ObservableObject {
     @Published var dessertMenu: [RestaurantMenu]
     @Published var drinkMenu: [RestaurantMenu]
     
+    // MARK: - Cart
+    @Published var cart: [RestaurantMenu] = []
     
     init() {
         salatMenu = RestaurantMenuData.salat
@@ -41,6 +43,13 @@ class MenuViewModel: ObservableObject {
             selectedTagDeliveryOrRestaurant: 1,
             countPromoImage: 8,
             selectedPromoImage: 1)
+    }
+    
+    // MARK: - Function
+    
+    // deleteCart
+    func deleteCart(indexSet: IndexSet) {
+        cart.remove(atOffsets: indexSet)
     }
 
 }

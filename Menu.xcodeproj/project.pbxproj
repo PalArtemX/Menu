@@ -18,6 +18,7 @@
 		F8414D6F2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8414D6E2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift */; };
 		F84824B9276E0A0700E27AF9 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84824B8276E0A0700E27AF9 /* InfoView.swift */; };
 		F84824BB276E0DE900E27AF9 /* DeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84824BA276E0DE900E27AF9 /* DeliveryView.swift */; };
+		F8506CD827749A2000C146C5 /* DetailCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8506CD727749A2000C146C5 /* DetailCartView.swift */; };
 		F858A3142766203200062253 /* MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3132766203200062253 /* MenuApp.swift */; };
 		F858A3162766203200062253 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3152766203200062253 /* HomeView.swift */; };
 		F858A3182766203300062253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F858A3172766203300062253 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		F8414D6E2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDeliveryOrRestaurant.swift; sourceTree = "<group>"; };
 		F84824B8276E0A0700E27AF9 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		F84824BA276E0DE900E27AF9 /* DeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryView.swift; sourceTree = "<group>"; };
+		F8506CD727749A2000C146C5 /* DetailCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCartView.swift; sourceTree = "<group>"; };
 		F858A3102766203200062253 /* Park Kultury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park Kultury.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F858A3132766203200062253 /* MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuApp.swift; sourceTree = "<group>"; };
 		F858A3152766203200062253 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		F8397123276B79C200D8151E /* CartViewsDetails */ = {
 			isa = PBXGroup;
 			children = (
+				F8506CD727749A2000C146C5 /* DetailCartView.swift */,
 			);
 			path = CartViewsDetails;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				F84824BB276E0DE900E27AF9 /* DeliveryView.swift in Sources */,
 				F8BF663A2771E19C000ACB7D /* RestaurantMenu.swift in Sources */,
 				F8397116276B4DCC00D8151E /* AboutView.swift in Sources */,
+				F8506CD827749A2000C146C5 /* DetailCartView.swift in Sources */,
 				F8414D6F2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift in Sources */,
 				F8335A4227693206004C5793 /* Menu.swift in Sources */,
 				F858A3262766534C00062253 /* MenuView.swift in Sources */,
