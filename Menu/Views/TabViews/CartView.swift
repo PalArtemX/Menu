@@ -17,14 +17,14 @@ struct CartView: View {
             BackgroundView()
             
             VStack {
-            // MARK: - Cart
+            // MARK: - Cart List or Cart Is Empty
+                Spacer()
+                
                 if vm.cart.isEmpty {
-                    Text("ddd")
+                    CartIsEmptyView(vm: vm)
                 } else {
                     List {
-                        
                         ForEach(vm.cart) { item in
-        
                             DetailCartView(name: item.name, image: item.image, price: item.price, vm: vm)
                         }
                         .onDelete(perform: vm.deleteCart)
@@ -37,7 +37,7 @@ struct CartView: View {
                 
             
             
-
+                Spacer()
             // MARK: - Place an Order
                 Text("Kolichestvo: \(vm.cart.count)")
                 Text("Price:  ")

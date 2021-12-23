@@ -34,7 +34,6 @@ class MenuViewModel: ObservableObject {
         drinkMenu = RestaurantMenuData.drink
         
         menu = Menu(
-            badgeCart: 1,
             selectedTab: 0,
             numberPhone: "7777777",
             nameCafe: "Park Kultyry",

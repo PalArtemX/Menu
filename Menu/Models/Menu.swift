@@ -10,7 +10,6 @@ import MapKit
 
 struct Menu {
     // MARK: - HomeView
-    var badgeCart: Int
     var selectedTab: Int
     
     // MARK: - ContactsView

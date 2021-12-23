@@ -83,10 +83,6 @@ struct DetailCartView: View {
             }
         }
     }
-    func priceQuantity(quantity: Double) -> Double {
-         price * quantity
-    }
-    
 }
 
 
