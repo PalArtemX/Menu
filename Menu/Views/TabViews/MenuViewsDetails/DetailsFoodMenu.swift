@@ -12,9 +12,9 @@ struct DetailsFoodMenu: View {
     let name: String
     let image: Image
     let price: Double
-    //@State private var quantity: Double = 1
+
     let action: () -> ()
-    
+    @State private var showAddCart = false
     
     var body: some View {
         HStack(alignment: .bottom) {
@@ -60,11 +60,16 @@ struct DetailsFoodMenu: View {
                 // MARK: - Button
                 Button {
                     action()
+                    withAnimation(.linear) {
+                        showAddCart.toggle()
+                    }
                 } label: {
                     HStack {
                         Text("\(price, specifier: "%.2f") $")
                             .fontWeight(.bold)
                         Image(systemName: "cart")
+                            .font(.headline)
+                            .rotationEffect(Angle(degrees: showAddCart ? 0 : 360))
                     }
                     .padding(.horizontal)
                     .font(.subheadline)
