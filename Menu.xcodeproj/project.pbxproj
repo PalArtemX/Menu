@@ -99,21 +99,21 @@
 			path = Background;
 			sourceTree = "<group>";
 		};
-		F8397122276B79AB00D8151E /* ProfileViewsDetails */ = {
+		F8397122276B79AB00D8151E /* ProfileViewDetails */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ProfileViewsDetails;
+			path = ProfileViewDetails;
 			sourceTree = "<group>";
 		};
-		F8397123276B79C200D8151E /* CartViewsDetails */ = {
+		F8397123276B79C200D8151E /* CartViewDetails */ = {
 			isa = PBXGroup;
 			children = (
 				F8506CD727749A2000C146C5 /* DetailCartView.swift */,
 				F88C97F92774ED5E00D208DE /* CartIsEmptyView.swift */,
 				F86C506527790AEC004BCC47 /* PlaceAnOrderView.swift */,
 			);
-			path = CartViewsDetails;
+			path = CartViewDetails;
 			sourceTree = "<group>";
 		};
 		F8397137276DF9A800D8151E /* Extension */ = {
@@ -194,10 +194,10 @@
 		F858A3242766518000062253 /* TabViews */ = {
 			isa = PBXGroup;
 			children = (
-				F858A32D276761AE00062253 /* MenuViewsDetails */,
-				F8397122276B79AB00D8151E /* ProfileViewsDetails */,
-				F858A32F276761C700062253 /* ContactsViewsDetails */,
-				F8397123276B79C200D8151E /* CartViewsDetails */,
+				F858A32D276761AE00062253 /* MenuViewDetails */,
+				F8397122276B79AB00D8151E /* ProfileViewDetails */,
+				F858A32F276761C700062253 /* ContactsViewDetails */,
+				F8397123276B79C200D8151E /* CartViewDetails */,
 				F858A3252766534C00062253 /* MenuView.swift */,
 				F858A3272766538000062253 /* ProfileView.swift */,
 				F858A3292766539900062253 /* ContactsView.swift */,
@@ -206,7 +206,7 @@
 			path = TabViews;
 			sourceTree = "<group>";
 		};
-		F858A32D276761AE00062253 /* MenuViewsDetails */ = {
+		F858A32D276761AE00062253 /* MenuViewDetails */ = {
 			isa = PBXGroup;
 			children = (
 				F8414D6E2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift */,
@@ -215,10 +215,10 @@
 				F8BF66372771D36D000ACB7D /* RestaurantMenuView.swift */,
 				F8BF663B2771E26E000ACB7D /* DetailsFoodMenu.swift */,
 			);
-			path = MenuViewsDetails;
+			path = MenuViewDetails;
 			sourceTree = "<group>";
 		};
-		F858A32F276761C700062253 /* ContactsViewsDetails */ = {
+		F858A32F276761C700062253 /* ContactsViewDetails */ = {
 			isa = PBXGroup;
 			children = (
 				F858A3312767623F00062253 /* MapView.swift */,
@@ -231,7 +231,7 @@
 				F84824B8276E0A0700E27AF9 /* InfoView.swift */,
 				F84824BA276E0DE900E27AF9 /* DeliveryView.swift */,
 			);
-			path = ContactsViewsDetails;
+			path = ContactsViewDetails;
 			sourceTree = "<group>";
 		};
 		F87FA2232770FD59007EB089 /* ViewComponents */ = {
