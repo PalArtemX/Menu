@@ -54,19 +54,21 @@ struct DetailCartView: View {
 //                }
                 Spacer()
                 
-                HStack {
+                HStack(spacing: 1) {
                     Image(systemName: "chevron.left.2")
+                    
                     Text("Delete")
                     Image(systemName: "chevron.left.2")
                 }
-                .font(.caption)
+                .symbolRenderingMode(.hierarchical)
+                .font(.caption2)
                 .foregroundColor(.red)
                 Spacer()
                 // MARK: - Price
                 Text("\(price, specifier: "%.2f") $")
                         .font(.headline)
                         .fontWeight(.bold)
-                        .padding(4)
+                        .padding(5)
                         .padding(.horizontal)
                         .background(.thinMaterial)
                         .cornerRadius(5)

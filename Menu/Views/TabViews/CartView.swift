@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CartView: View {
     @ObservedObject var vm: MenuViewModel
-    @State private var nn = 1.0
     
     var body: some View {
         ZStack {
@@ -26,17 +25,14 @@ struct CartView: View {
                     List {
                         ForEach(vm.cart) { item in
                             DetailCartView(name: item.name, image: item.image, price: item.price)
-                            
                         }
-                        
                         .onDelete(perform: vm.deleteCart)
                     }
                     .listStyle(.plain)
                 }
                 Spacer()
                 // MARK: - Place an Order
-                Text("Kolichestvo: \(vm.cart.count)")
-                Text("Summa: \(vm.summaCartFood()) ")
+                PlaceAnOrderView(vm: vm)
             }
         }
     }
