@@ -11,12 +11,7 @@ struct DetailCartView: View {
     
     let name: String
     let image: Image
-    var price: Double
-    @State private var quantityStepper: Double = 1
-    
-    
-    @ObservedObject var vm: MenuViewModel
-    
+    let price: Double
     
     var body: some View {
         HStack(alignment: .bottom) {
@@ -33,13 +28,11 @@ struct DetailCartView: View {
                     // MARK: - Price and Name
                     HStack {
                         // MARK: - price
-                        Text("\(price, specifier: "%.2f") $")
-                            .font(.subheadline)
-                        
+//                        Text("\(price, specifier: "%.2f") $")
+//                            .font(.subheadline)
                         // MARK: - name
                         Text(name)
                             .fontWeight(.bold)
-                        
                     }
                     .padding(3)
                     .background(.ultraThinMaterial)
@@ -50,17 +43,15 @@ struct DetailCartView: View {
                 }
                 Spacer()
             }
-            
             // MARK: Stepper and Button
             VStack(spacing: 0) {
                 // MARK: - Stepper
-
-                Stepper(value: $quantityStepper, in: 1...5) {
-                    Text("X \(quantityStepper, specifier: "%.0f")")
-                        .foregroundColor(.gray)
-                        .font(.subheadline)
-                        .fontWeight(.black)
-                }
+//                Stepper(value: $vm.food.quantityStepper , in: 1...5) {
+//                    Text("X \(vm.food.quantityStepper, specifier: "%.0f")")
+//                        .foregroundColor(.gray)
+//                        .font(.subheadline)
+//                        .fontWeight(.black)
+//                }
                 Spacer()
                 
                 HStack {
@@ -97,11 +88,11 @@ struct DetailCartView: View {
 struct DetailCartView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DetailCartView(name: "Name Foods", image: Image("soup"), price: 25.0, vm: MenuViewModel())
+            DetailCartView(name: "Name Foods", image: Image("soup"), price: 25.0)
                 .previewLayout(.sizeThatFits)
                 .frame(height: 90)
                 .padding()
-            DetailCartView(name: "Name Foods", image: Image("soup"), price: 20.0, vm: MenuViewModel())
+            DetailCartView(name: "Name Foods", image: Image("soup"), price: 20.0)
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
                 .frame(height: 90)

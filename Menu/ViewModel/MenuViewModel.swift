@@ -24,6 +24,7 @@ class MenuViewModel: ObservableObject {
     
     // MARK: - Cart
     @Published var cart: [RestaurantMenu] = []
+    @Published var summaCart = 1.0
     
     // MARK: - init
     init() {
@@ -51,5 +52,18 @@ class MenuViewModel: ObservableObject {
     func deleteCart(indexSet: IndexSet) {
         cart.remove(atOffsets: indexSet)
     }
-
+    
+    func addFoodCart(item: RestaurantMenu) {
+        cart.append(item)
+    }
+    
+    func summaCartFood() -> Double {
+        var summa = 0.0
+        for x in cart {
+            summa += x.price
+        }
+        
+        
+        return summa
+    }
 }

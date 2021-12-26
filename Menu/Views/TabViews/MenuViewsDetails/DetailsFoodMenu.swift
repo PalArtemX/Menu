@@ -12,7 +12,7 @@ struct DetailsFoodMenu: View {
     let name: String
     let image: Image
     let price: Double
-    @State private var quantity: Double = 1
+    //@State private var quantity: Double = 1
     let action: () -> ()
     
     
@@ -30,10 +30,9 @@ struct DetailsFoodMenu: View {
                     
                     // MARK: - Price and Name
                     HStack {
-                        // MARK: - price
-                        Text("\(price, specifier: "%.2f") $")
-                            .font(.headline)
-                        
+//                        // MARK: - price
+//                        Text("\(price, specifier: "%.2f") $")
+//                            .font(.headline)
                         // MARK: - name
                         Text(name)
                             .fontWeight(.bold)
@@ -48,24 +47,22 @@ struct DetailsFoodMenu: View {
                 }
                 Spacer()
             }
-            
             // MARK: Stepper and Button
             VStack {
-                // MARK: - Stepper
-                Stepper(value: $quantity, in: 1...5) {
-                    Text("X \(quantity, specifier: "%.0f")")
-                        .foregroundColor(.gray)
-                        .font(.subheadline)
-                        .fontWeight(.black)
-                        
-                }
+//                // MARK: - Stepper
+//                Stepper(value: $quantity, in: 1...5) {
+//                    Text("X \(quantity, specifier: "%.0f")")
+//                        .foregroundColor(.gray)
+//                        .font(.subheadline)
+//                        .fontWeight(.black)
+//                }
                 Spacer()
                 // MARK: - Button
                 Button {
                     action()
                 } label: {
                     HStack {
-                        Text("\(price * quantity, specifier: "%.2f") $")
+                        Text("\(price, specifier: "%.2f") $")
                             .fontWeight(.bold)
                         Image(systemName: "cart")
                     }

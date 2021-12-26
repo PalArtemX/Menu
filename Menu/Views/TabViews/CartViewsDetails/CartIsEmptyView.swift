@@ -15,13 +15,11 @@ struct CartIsEmptyView: View {
         VStack {
             Text("Your cart is empty yet")
                 .font(.headline)
-            
             Button {
                 vm.menu.selectedTab = 0
             } label: {
                 Image(systemName: "fork.knife")
                 Text("Go to Menu")
-                
             }
             .buttonStyle(.bordered)
 
