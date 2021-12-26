@@ -168,7 +168,7 @@
 			children = (
 				F858A3152766203200062253 /* HomeView.swift */,
 				F858A3242766518000062253 /* TabViews */,
-				F87FA2232770FD59007EB089 /* ViewsComponents */,
+				F87FA2232770FD59007EB089 /* ViewComponents */,
 				F8397121276B78F400D8151E /* Background */,
 			);
 			path = Views;
@@ -234,12 +234,12 @@
 			path = ContactsViewsDetails;
 			sourceTree = "<group>";
 		};
-		F87FA2232770FD59007EB089 /* ViewsComponents */ = {
+		F87FA2232770FD59007EB089 /* ViewComponents */ = {
 			isa = PBXGroup;
 			children = (
 				F881124F2770AB320093ED49 /* HeaderLogoView.swift */,
 			);
-			path = ViewsComponents;
+			path = ViewComponents;
 			sourceTree = "<group>";
 		};
 		F8E71C42277385B0001254D0 /* DataServices */ = {

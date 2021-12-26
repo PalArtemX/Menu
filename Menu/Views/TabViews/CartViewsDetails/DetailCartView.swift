@@ -43,7 +43,7 @@ struct DetailCartView: View {
                 }
                 Spacer()
             }
-            // MARK: Stepper and Button
+            // MARK: Stepper and Buttons
             VStack(spacing: 0) {
                 // MARK: - Stepper
 //                Stepper(value: $vm.food.quantityStepper , in: 1...5) {
@@ -53,7 +53,7 @@ struct DetailCartView: View {
 //                        .fontWeight(.black)
 //                }
                 Spacer()
-                
+                // MARK: - Delete
                 HStack(spacing: 1) {
                     Image(systemName: "chevron.left.2")
                     

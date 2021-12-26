@@ -47,23 +47,22 @@ class MenuViewModel: ObservableObject {
     }
     
     // MARK: - Function
-    
     /// deleteCart
     func deleteCart(indexSet: IndexSet) {
         cart.remove(atOffsets: indexSet)
     }
-    
+    /// addFoodCart
     func addFoodCart(item: RestaurantMenu) {
         cart.append(item)
     }
-    
+    /// summaCartFood
     func summaCartFood() -> Double {
         var summa = 0.0
         for x in cart {
             summa += x.price
         }
-        
-        
         return summa
     }
+    
+    
 }
