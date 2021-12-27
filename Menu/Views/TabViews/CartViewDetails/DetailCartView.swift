@@ -9,9 +9,7 @@ import SwiftUI
 
 struct DetailCartView: View {
     
-    let name: String
-    let image: Image
-    let price: Double
+    let restaurantMenu: RestaurantMenu
     
     var body: some View {
         HStack(alignment: .bottom) {
@@ -19,7 +17,7 @@ struct DetailCartView: View {
             HStack {
                 ZStack(alignment: .topLeading) {
                     // MARK: - image
-                    image
+                    restaurantMenu.image
                         .resizable()
                         .scaledToFit()
                         .frame(width: 150)
@@ -31,7 +29,7 @@ struct DetailCartView: View {
 //                        Text("\(price, specifier: "%.2f") $")
 //                            .font(.subheadline)
                         // MARK: - name
-                        Text(name)
+                        Text(restaurantMenu.name)
                             .fontWeight(.bold)
                     }
                     .padding(3)
@@ -65,7 +63,7 @@ struct DetailCartView: View {
                 .foregroundColor(.red)
                 Spacer()
                 // MARK: - Price
-                Text("\(price, specifier: "%.2f") $")
+                Text("\(restaurantMenu.price, specifier: "%.2f") $")
                         .font(.headline)
                         .fontWeight(.bold)
                         .padding(5)
@@ -90,11 +88,11 @@ struct DetailCartView: View {
 struct DetailCartView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DetailCartView(name: "Name Foods", image: Image("soup"), price: 25.0)
+            DetailCartView(restaurantMenu: RestaurantMenu(image: Image("soup"), price: 23.35, name: "Soup"))
                 .previewLayout(.sizeThatFits)
                 .frame(height: 90)
                 .padding()
-            DetailCartView(name: "Name Foods", image: Image("soup"), price: 20.0)
+            DetailCartView(restaurantMenu: RestaurantMenu(image: Image("soup"), price: 23.35, name: "Soup"))
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
                 .frame(height: 90)

@@ -9,9 +9,7 @@ import SwiftUI
 
 struct DetailsFoodMenu: View {
     
-    let name: String
-    let image: Image
-    let price: Double
+    let restaurantMenu: RestaurantMenu
 
     let action: () -> ()
     @State private var showAddCart = false
@@ -22,7 +20,7 @@ struct DetailsFoodMenu: View {
             HStack {
                 ZStack(alignment: .topLeading) {
                     // MARK: - image
-                    image
+                    restaurantMenu.image
                         .resizable()
                         .scaledToFit()
                         .frame(width: 200)
@@ -34,7 +32,7 @@ struct DetailsFoodMenu: View {
 //                        Text("\(price, specifier: "%.2f") $")
 //                            .font(.headline)
                         // MARK: - name
-                        Text(name)
+                        Text(restaurantMenu.name)
                             .fontWeight(.bold)
                             
                     }
@@ -65,7 +63,7 @@ struct DetailsFoodMenu: View {
                     }
                 } label: {
                     HStack {
-                        Text("\(price, specifier: "%.2f") $")
+                        Text("\(restaurantMenu.price, specifier: "%.2f") $")
                             .fontWeight(.bold)
                         Image(systemName: "cart")
                             .font(.headline)
@@ -93,11 +91,11 @@ struct DetailsFoodMenu_Previews: PreviewProvider {
     static var previews: some View {
         
         Group {
-            DetailsFoodMenu(name: "Garden Fresh", image: Image("salat"), price: 10.20, action: {})
+            DetailsFoodMenu(restaurantMenu: RestaurantMenu(image: Image("soup"), price: 23.35, name: "Soup"), action: {})
                 .previewLayout(.sizeThatFits)
                 .padding()
                 
-            DetailsFoodMenu(name: "Garden Fresh", image: Image("salat"), price: 10.20, action: {})
+            DetailsFoodMenu(restaurantMenu: RestaurantMenu(image: Image("soup"), price: 23.35, name: "Soup"), action: {})
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
                 .padding()

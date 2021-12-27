@@ -23,8 +23,8 @@ struct CartView: View {
                     CartIsEmptyView(vm: vm)
                 } else {
                     List {
-                        ForEach(vm.cart) { item in
-                            DetailCartView(name: item.name, image: item.image, price: item.price)
+                        ForEach(vm.cart) { restaurantMenu in
+                            DetailCartView(restaurantMenu: restaurantMenu)
                         }
                         .onDelete(perform: vm.deleteCart)
                     }

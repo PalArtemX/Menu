@@ -15,49 +15,49 @@ struct RestaurantMenuView: View {
         List {
             // MARK: - Salad
             Section("Salad") {
-                ForEach(vm.salatMenu) { item in
-                    DetailsFoodMenu(name: item.name, image: item.image, price: item.price) {
-                        vm.addFoodCart(item: item)
+                ForEach(vm.salatMenu) { restaurantMenu in
+                    DetailsFoodMenu(restaurantMenu: restaurantMenu) {
+                        vm.addFoodCart(item: restaurantMenu)
                     }
                 }
             }
             // MARK: - Meat
             Section("Meat") {
-                ForEach(vm.meatMenu) { item in
-                    DetailsFoodMenu(name: item.name, image: item.image, price: item.price) {
-                        vm.addFoodCart(item: item)
+                ForEach(vm.meatMenu) { restaurantMenu in
+                    DetailsFoodMenu(restaurantMenu: restaurantMenu) {
+                        vm.addFoodCart(item: restaurantMenu)
                     }
                 }
             }
             // MARK: - Pizza
             Section("Pizza") {
-                ForEach(vm.pizzaMenu) { item in
-                    DetailsFoodMenu(name: item.name, image: item.image, price: item.price) {
-                        vm.addFoodCart(item: item)
+                ForEach(vm.pizzaMenu) { restaurantMenu in
+                    DetailsFoodMenu(restaurantMenu: restaurantMenu) {
+                        vm.addFoodCart(item: restaurantMenu)
                     }
                 }
             }
             // MARK: - Soup
             Section("Soup") {
-                ForEach(vm.soupMenu) { item in
-                    DetailsFoodMenu(name: item.name, image: item.image, price: item.price) {
-                        vm.addFoodCart(item: item)
+                ForEach(vm.soupMenu) { restaurantMenu in
+                    DetailsFoodMenu(restaurantMenu: restaurantMenu) {
+                        vm.addFoodCart(item: restaurantMenu)
                     }
                 }
             }
             // MARK: - Dessert
             Section("Dessert") {
-                ForEach(vm.dessertMenu) { item in
-                    DetailsFoodMenu(name: item.name, image: item.image, price: item.price) {
-                        vm.addFoodCart(item: item)
+                ForEach(vm.dessertMenu) { restaurantMenu in
+                    DetailsFoodMenu(restaurantMenu: restaurantMenu) {
+                        vm.addFoodCart(item: restaurantMenu)
                     }
                 }
             }
             // MARK: - Drinks
             Section("Drinks") {
-                ForEach(vm.drinkMenu) { item in
-                    DetailsFoodMenu(name: item.name, image: item.image, price: item.price) {
-                        vm.addFoodCart(item: item)
+                ForEach(vm.drinkMenu) { restaurantMenu in
+                    DetailsFoodMenu(restaurantMenu: restaurantMenu) {
+                        vm.addFoodCart(item: restaurantMenu)
                     }
                 }
             }
