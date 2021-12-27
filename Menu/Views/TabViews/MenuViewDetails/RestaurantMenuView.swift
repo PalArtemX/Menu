@@ -17,7 +17,7 @@ struct RestaurantMenuView: View {
             Section("Salad") {
                 ForEach(vm.salatMenu) { restaurantMenu in
                     DetailsFoodMenu(restaurantMenu: restaurantMenu) {
-                        vm.addFoodCart(item: restaurantMenu)
+                        vm.addFoodCart(restaurantMenu: restaurantMenu)
                     }
                 }
             }
@@ -25,7 +25,7 @@ struct RestaurantMenuView: View {
             Section("Meat") {
                 ForEach(vm.meatMenu) { restaurantMenu in
                     DetailsFoodMenu(restaurantMenu: restaurantMenu) {
-                        vm.addFoodCart(item: restaurantMenu)
+                        vm.addFoodCart(restaurantMenu: restaurantMenu)
                     }
                 }
             }
@@ -33,7 +33,7 @@ struct RestaurantMenuView: View {
             Section("Pizza") {
                 ForEach(vm.pizzaMenu) { restaurantMenu in
                     DetailsFoodMenu(restaurantMenu: restaurantMenu) {
-                        vm.addFoodCart(item: restaurantMenu)
+                        vm.addFoodCart(restaurantMenu: restaurantMenu)
                     }
                 }
             }
@@ -41,7 +41,7 @@ struct RestaurantMenuView: View {
             Section("Soup") {
                 ForEach(vm.soupMenu) { restaurantMenu in
                     DetailsFoodMenu(restaurantMenu: restaurantMenu) {
-                        vm.addFoodCart(item: restaurantMenu)
+                        vm.addFoodCart(restaurantMenu: restaurantMenu)
                     }
                 }
             }
@@ -49,7 +49,7 @@ struct RestaurantMenuView: View {
             Section("Dessert") {
                 ForEach(vm.dessertMenu) { restaurantMenu in
                     DetailsFoodMenu(restaurantMenu: restaurantMenu) {
-                        vm.addFoodCart(item: restaurantMenu)
+                        vm.addFoodCart(restaurantMenu: restaurantMenu)
                     }
                 }
             }
@@ -57,7 +57,7 @@ struct RestaurantMenuView: View {
             Section("Drinks") {
                 ForEach(vm.drinkMenu) { restaurantMenu in
                     DetailsFoodMenu(restaurantMenu: restaurantMenu) {
-                        vm.addFoodCart(item: restaurantMenu)
+                        vm.addFoodCart(restaurantMenu: restaurantMenu)
                     }
                 }
             }

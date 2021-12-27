@@ -52,8 +52,8 @@ class MenuViewModel: ObservableObject {
         cart.remove(atOffsets: indexSet)
     }
     /// addFoodCart
-    func addFoodCart(item: RestaurantMenu) {
-        cart.append(item)
+    func addFoodCart(restaurantMenu: RestaurantMenu) {
+        cart.append(restaurantMenu)
     }
     /// summaCartFood
     func summaCartFood() -> Double {
