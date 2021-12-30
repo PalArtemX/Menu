@@ -24,7 +24,6 @@ class MenuViewModel: ObservableObject {
     
     // MARK: - Cart
     @Published var cart: [RestaurantMenu] = []
-    @Published var summaCart = 1.0
     
     // MARK: - init
     init() {

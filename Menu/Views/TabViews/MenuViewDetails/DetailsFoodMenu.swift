@@ -10,8 +10,8 @@ import SwiftUI
 struct DetailsFoodMenu: View {
     
     let restaurantMenu: RestaurantMenu
-
     let action: () -> ()
+    
     @State private var showAddCart = false
     
     var body: some View {
