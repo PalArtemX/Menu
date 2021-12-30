@@ -14,12 +14,14 @@ struct UserPhotoView: View {
     
     var body: some View {
         VStack {
+            // MARK: - Image
             Image(uiImage: avatarImage)
                 .resizable()
                 .scaledToFit()
                 .clipShape(Circle(), style: FillStyle())
                 .frame(maxHeight: 100)
             
+            // MARK: - Button
             Button(action: {
                 isShowing.toggle()
             }, label: {

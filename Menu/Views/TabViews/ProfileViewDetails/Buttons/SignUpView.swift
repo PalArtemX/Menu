@@ -15,6 +15,7 @@ struct SignUpView: View {
         HStack {
             Text("Don't have an account?", comment: "Button Sing Up")
                 .foregroundColor(Color(.systemGray3))
+            
             Button(action: {
                 isPresented.toggle()
             }, label: {
@@ -39,6 +40,14 @@ struct SignUpView: View {
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView(isPresented: .constant(false))
+        Group {
+            SignUpView(isPresented: .constant(false))
+                .previewLayout(.sizeThatFits)
+            .padding()
+            SignUpView(isPresented: .constant(false))
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }

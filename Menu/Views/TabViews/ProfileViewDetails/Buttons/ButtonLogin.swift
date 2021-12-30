@@ -54,6 +54,14 @@ struct ButtonLogin: View {
 
 struct ButtonLogin_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonLogin(vm: MenuViewModel())
+        Group {
+            ButtonLogin(vm: MenuViewModel())
+                .previewLayout(.sizeThatFits)
+            .padding()
+            ButtonLogin(vm: MenuViewModel())
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }

@@ -18,8 +18,10 @@ struct ProfileView: View {
             
             VStack {
                 if vm.profile.signedIn {
+                    // MARK: - LoggedUser
                     LoggedUserView(vm: vm)
                 } else {
+                    // MARK: - Login
                     LoginView(vm: vm)
                 }
             }

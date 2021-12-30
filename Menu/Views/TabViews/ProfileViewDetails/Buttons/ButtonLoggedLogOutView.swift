@@ -48,6 +48,14 @@ struct ButtonLoggedLogOutView: View {
 
 struct ButtonLoggedLogOutView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonLoggedLogOutView(vm: MenuViewModel())
+        Group {
+            ButtonLoggedLogOutView(vm: MenuViewModel())
+                .previewLayout(.sizeThatFits)
+            .padding()
+            ButtonLoggedLogOutView(vm: MenuViewModel())
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }

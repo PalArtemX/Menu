@@ -26,7 +26,7 @@ struct CartView: View {
                         ForEach(vm.cart) { restaurantMenu in
                             DetailCartView(restaurantMenu: restaurantMenu)
                         }
-                        .onDelete(perform: vm.deleteCart)
+                        .onDelete(perform: vm.deleteRowCart)
                     }
                     .listStyle(.plain)
                 }

@@ -39,7 +39,7 @@ struct PhotoPicker: UIViewControllerRepresentable {
                 }
                 photoPicker.avatarImage = compressedImage
             } else {
-                // return error show alert
+                // FIXME: return error show alert
             }
             picker.dismiss(animated: true)
         }

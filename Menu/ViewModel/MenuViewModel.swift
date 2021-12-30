@@ -25,11 +25,12 @@ class MenuViewModel: ObservableObject {
     @Published var dessertMenu: [RestaurantMenu]
     @Published var drinkMenu: [RestaurantMenu]
     
+    // MARK: - Profile
+    @Published var profile = ProfileModel()
+    
     // MARK: - Cart
     @Published var cart: [RestaurantMenu] = []
     
-    // MARK: - Profile
-    @Published var profile = ProfileModel()
     
     // MARK: - init
     init() {
@@ -51,7 +52,7 @@ class MenuViewModel: ObservableObject {
             selectedPromoImage: 1)
     }
     
-    // MARK: - UserDefaults
+    // MARK: - AppStorage
     @AppStorage("name_user") var nameUser = ""
     @AppStorage("email_user") var emailUser = ""
     @AppStorage("address_user") var addressUser = ""
@@ -62,6 +63,7 @@ class MenuViewModel: ObservableObject {
         }
     
     // MARK: - func Firebase
+    /// signIn
     func signIn(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
             guard result != nil, error == nil else { return }
@@ -72,7 +74,7 @@ class MenuViewModel: ObservableObject {
         }
         saveUserProfile(email: email)
     }
-    
+    /// signUp
     func signUp(email: String, password: String) {
         Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
             guard result != nil, error == nil else { return }
@@ -85,7 +87,7 @@ class MenuViewModel: ObservableObject {
         profile.password = ""
         profile.passwordCheck = ""
     }
-    
+    /// signOut
     func signOut() {
         try? Auth.auth().signOut()
         self.profile.signedIn = false
@@ -104,6 +106,7 @@ class MenuViewModel: ObservableObject {
     func removeUserProfile() {
         nameUser = ""
         emailUser = ""
+        addressUser = ""
     }
     
     /// checkingTheInputSignUp
@@ -121,14 +124,16 @@ class MenuViewModel: ObservableObject {
         }
     }
     
-    /// deleteCart
-    func deleteCart(indexSet: IndexSet) {
+    /// deleteRowCart
+    func deleteRowCart(indexSet: IndexSet) {
         cart.remove(atOffsets: indexSet)
     }
+    
     /// addFoodCart
     func addFoodCart(restaurantMenu: RestaurantMenu) {
         cart.append(restaurantMenu)
     }
+    
     /// summaCartFood
     func summaCartFood() -> Double {
         var summa = 0.0

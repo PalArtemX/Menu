@@ -59,6 +59,14 @@ struct ButtonSignUpView: View {
 
 struct ButtonSignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonSignUpView(vm: MenuViewModel(), showAlert: .constant(false))
+        Group {
+            ButtonSignUpView(vm: MenuViewModel(), showAlert: .constant(false))
+                .previewLayout(.sizeThatFits)
+            .padding()
+            ButtonSignUpView(vm: MenuViewModel(), showAlert: .constant(false))
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }

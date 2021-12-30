@@ -16,22 +16,24 @@ struct RegistrationView: View {
     var body: some View {
         NavigationView {
             VStack {
-                // MARK: - Form Registration
+
                 Form {
+                    // MARK: - Email
                     Section(header: Text("Email", comment: "Section: Email")) {
                         TextField("Enter email...", text: $vm.profile.email)
                             .keyboardType(.emailAddress)
                             .disableAutocorrection(true)
                             .autocapitalization(.none)
                     }
-                    
+                    // MARK: - Password
                     Section(header: Text("Password", comment: "Section: Password")) {
                         SecureField("Enter password...", text: $vm.profile.password)
                         SecureField("Enter password again...", text: $vm.profile.passwordCheck)
                     }
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
-                } // Form
+                }
+                
                 // MARK: - Button "Sign Up"
                 ButtonSignUpView(vm: vm, presentationMode: _presentationMode, showAlert: $showAlert)
                     .padding()

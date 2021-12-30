@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ButtonResetPasswordView: View {
     var body: some View {
+        // MARK: Header section
         Section(header: Text("Reset your password")) {
+            
+            // MARK: - Button
             Button(action: {
                 // cod
             }, label: {
@@ -37,6 +40,14 @@ struct ButtonResetPasswordView: View {
 
 struct ButtonResetPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonResetPasswordView()
+        Group {
+            ButtonResetPasswordView()
+                .previewLayout(.sizeThatFits)
+            .padding()
+            ButtonResetPasswordView()
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }

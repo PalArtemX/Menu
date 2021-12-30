@@ -35,6 +35,7 @@ struct LoggedUserView: View {
                         })
                     }
                 }
+                
                 // MARK: - Address
                 Section(header: Text("Address")) {
                     Text(vm.addressUser)
@@ -55,6 +56,7 @@ struct LoggedUserView: View {
                         })
                     }
                 }
+                
                 // MARK: - Email
                 Section(header: Text("Email")) {
                     Text(vm.emailUser)
