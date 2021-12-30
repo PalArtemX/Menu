@@ -17,6 +17,7 @@ struct ButtonResetPasswordView: View {
                     Spacer()
                     Text("Reset Password")
                     Image(systemName: "ellipsis.rectangle")
+                        .symbolRenderingMode(.hierarchical)
                     Spacer()
                 }
                 .foregroundColor(Color(.systemRed))

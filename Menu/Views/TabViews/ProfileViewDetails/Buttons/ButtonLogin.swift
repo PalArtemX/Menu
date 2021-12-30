@@ -33,6 +33,7 @@ struct ButtonLogin: View {
                 Spacer()
                 Text("Login")
                 Image(systemName: "person")
+                    .symbolRenderingMode(.hierarchical)
                 Spacer()
             }
             .font(.headline)

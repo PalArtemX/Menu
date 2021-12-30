@@ -21,6 +21,7 @@ struct SignUpView: View {
                 HStack {
                     Text("Sign Up")
                     Image(systemName: "person.badge.plus")
+                        .symbolRenderingMode(.hierarchical)
                 }
                 .padding()
             })

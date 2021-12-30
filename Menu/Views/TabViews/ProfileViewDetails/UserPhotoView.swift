@@ -26,6 +26,7 @@ struct UserPhotoView: View {
                 HStack {
                     Text("Add a Photo")
                     Image(systemName: "person.fill.viewfinder")
+                        .symbolRenderingMode(.hierarchical)
                 }
             })
         }

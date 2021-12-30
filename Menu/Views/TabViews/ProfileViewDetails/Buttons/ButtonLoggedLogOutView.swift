@@ -23,6 +23,7 @@ struct ButtonLoggedLogOutView: View {
                 HStack {
                     Text("Log Out")
                     Image(systemName: "person.badge.minus")
+                        .symbolRenderingMode(.hierarchical)
                 }
                 .foregroundColor(Color(.systemRed))
                 .padding()

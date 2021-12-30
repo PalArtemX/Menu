@@ -39,6 +39,7 @@ struct ButtonSignUpView: View {
                 Spacer()
                 Text("Sign Up")
                 Image(systemName: "person.badge.plus")
+                    .symbolRenderingMode(.hierarchical)
                 Spacer()
             }
         })

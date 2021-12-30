@@ -54,6 +54,7 @@ class MenuViewModel: ObservableObject {
     // MARK: - UserDefaults
     @AppStorage("name_user") var nameUser = ""
     @AppStorage("email_user") var emailUser = ""
+    @AppStorage("address_user") var addressUser = ""
     
     // MARK: - Firebase
     var isSignedIn: Bool {
