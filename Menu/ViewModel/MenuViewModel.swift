@@ -8,6 +8,9 @@
 import Foundation
 import MapKit
 import SwiftUI
+import Firebase
+import FirebaseAuth
+import FirebaseCore
 
 class MenuViewModel: ObservableObject {
     
@@ -24,6 +27,9 @@ class MenuViewModel: ObservableObject {
     
     // MARK: - Cart
     @Published var cart: [RestaurantMenu] = []
+    
+    // MARK: - Profile
+    @Published var profile = ProfileModel()
     
     // MARK: - init
     init() {
@@ -45,7 +51,75 @@ class MenuViewModel: ObservableObject {
             selectedPromoImage: 1)
     }
     
+    // MARK: - UserDefaults
+    @AppStorage("name_user") var nameUser = ""
+    @AppStorage("email_user") var emailUser = ""
+    
+    // MARK: - Firebase
+    var isSignedIn: Bool {
+            return Auth.auth().currentUser != nil
+        }
+    
+    // MARK: - func Firebase
+    func signIn(email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
+            guard result != nil, error == nil else { return }
+            DispatchQueue.main.async {
+                self?.profile.signedIn = true
+            }
+            
+        }
+        saveUserProfile(email: email)
+    }
+    
+    func signUp(email: String, password: String) {
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
+            guard result != nil, error == nil else { return }
+            DispatchQueue.main.async {
+                self?.profile.signedIn = true
+            }
+        }
+        saveUserProfile(email: email)
+        
+        profile.password = ""
+        profile.passwordCheck = ""
+    }
+    
+    func signOut() {
+        try? Auth.auth().signOut()
+        self.profile.signedIn = false
+        removeUserProfile()
+    }
+    
+    
     // MARK: - Function
+    /// saveUserProfile
+    func saveUserProfile(email: String) {
+        nameUser = profile.nameUser
+        emailUser = email
+    }
+    
+    /// removeUserProfile
+    func removeUserProfile() {
+        nameUser = ""
+        emailUser = ""
+    }
+    
+    /// checkingTheInputSignUp
+    func checkingTheInputSignUp() throws {
+        
+        guard !profile.email.isEmpty else {
+            throw ErrorSignUp.invalidEmail
+        }
+        guard profile.password.count >= 5 else {
+            throw ErrorSignUp.passwordIsLessThan6Characters
+        }
+        guard profile.password == profile.passwordCheck else {
+            throw ErrorSignUp.passwordsDoNotMatch
+            
+        }
+    }
+    
     /// deleteCart
     func deleteCart(indexSet: IndexSet) {
         cart.remove(atOffsets: indexSet)

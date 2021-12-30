@@ -18,6 +18,21 @@
 		F8414D6F2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8414D6E2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift */; };
 		F84824B9276E0A0700E27AF9 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84824B8276E0A0700E27AF9 /* InfoView.swift */; };
 		F84824BB276E0DE900E27AF9 /* DeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84824BA276E0DE900E27AF9 /* DeliveryView.swift */; };
+		F84975D7277DCE5800B54025 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84975D6277DCE5800B54025 /* Profile.swift */; };
+		F84975D9277DCE9900B54025 /* ErrorSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84975D8277DCE9900B54025 /* ErrorSignUp.swift */; };
+		F84975DB277DCF3200B54025 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84975DA277DCF3200B54025 /* PhotoPicker.swift */; };
+		F84975DD277DCF7100B54025 /* UserPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84975DC277DCF7100B54025 /* UserPhotoView.swift */; };
+		F84975DF277DD7A900B54025 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F84975DE277DD7A900B54025 /* GoogleService-Info.plist */; };
+		F84975E2277DD96100B54025 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F84975E1277DD96100B54025 /* FirebaseAuth */; };
+		F84975E4277DD96100B54025 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F84975E3277DD96100B54025 /* FirebaseAuthCombine-Community */; };
+		F84975E6277DDEA700B54025 /* ButtonLoggedLogOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84975E5277DDEA700B54025 /* ButtonLoggedLogOutView.swift */; };
+		F84975E8277DDF0300B54025 /* ButtonResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84975E7277DDF0300B54025 /* ButtonResetPasswordView.swift */; };
+		F84975EA277DDFB700B54025 /* LoggedUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84975E9277DDFB700B54025 /* LoggedUserView.swift */; };
+		F84975EC277DE01C00B54025 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84975EB277DE01C00B54025 /* SignUpView.swift */; };
+		F84975EE277DE06200B54025 /* ButtonLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84975ED277DE06200B54025 /* ButtonLogin.swift */; };
+		F84975F0277DE09800B54025 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84975EF277DE09800B54025 /* LoginView.swift */; };
+		F84975F2277DE0E900B54025 /* ButtonSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84975F1277DE0E900B54025 /* ButtonSignUpView.swift */; };
+		F84975F4277DE12E00B54025 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84975F3277DE12E00B54025 /* RegistrationView.swift */; };
 		F8506CD827749A2000C146C5 /* DetailCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8506CD727749A2000C146C5 /* DetailCartView.swift */; };
 		F858A3142766203200062253 /* MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3132766203200062253 /* MenuApp.swift */; };
 		F858A3162766203200062253 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F858A3152766203200062253 /* HomeView.swift */; };
@@ -54,6 +69,19 @@
 		F8414D6E2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDeliveryOrRestaurant.swift; sourceTree = "<group>"; };
 		F84824B8276E0A0700E27AF9 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		F84824BA276E0DE900E27AF9 /* DeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryView.swift; sourceTree = "<group>"; };
+		F84975D6277DCE5800B54025 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		F84975D8277DCE9900B54025 /* ErrorSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorSignUp.swift; sourceTree = "<group>"; };
+		F84975DA277DCF3200B54025 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		F84975DC277DCF7100B54025 /* UserPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPhotoView.swift; sourceTree = "<group>"; };
+		F84975DE277DD7A900B54025 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F84975E5277DDEA700B54025 /* ButtonLoggedLogOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLoggedLogOutView.swift; sourceTree = "<group>"; };
+		F84975E7277DDF0300B54025 /* ButtonResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonResetPasswordView.swift; sourceTree = "<group>"; };
+		F84975E9277DDFB700B54025 /* LoggedUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedUserView.swift; sourceTree = "<group>"; };
+		F84975EB277DE01C00B54025 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F84975ED277DE06200B54025 /* ButtonLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLogin.swift; sourceTree = "<group>"; };
+		F84975EF277DE09800B54025 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F84975F1277DE0E900B54025 /* ButtonSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSignUpView.swift; sourceTree = "<group>"; };
+		F84975F3277DE12E00B54025 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		F8506CD727749A2000C146C5 /* DetailCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCartView.swift; sourceTree = "<group>"; };
 		F858A3102766203200062253 /* Park Kultury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park Kultury.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F858A3132766203200062253 /* MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuApp.swift; sourceTree = "<group>"; };
@@ -84,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84975E2277DD96100B54025 /* FirebaseAuth in Frameworks */,
+				F84975E4277DD96100B54025 /* FirebaseAuthCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +132,12 @@
 		F8397122276B79AB00D8151E /* ProfileViewDetails */ = {
 			isa = PBXGroup;
 			children = (
+				F84975DA277DCF3200B54025 /* PhotoPicker.swift */,
+				F84975DC277DCF7100B54025 /* UserPhotoView.swift */,
+				F84975E9277DDFB700B54025 /* LoggedUserView.swift */,
+				F84975EF277DE09800B54025 /* LoginView.swift */,
+				F84975F3277DE12E00B54025 /* RegistrationView.swift */,
+				F84975F5277DE41B00B54025 /* Buttons */,
 			);
 			path = ProfileViewDetails;
 			sourceTree = "<group>";
@@ -122,6 +158,18 @@
 				F8397138276DF9BE00D8151E /* Color.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F84975F5277DE41B00B54025 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F84975EB277DE01C00B54025 /* SignUpView.swift */,
+				F84975F1277DE0E900B54025 /* ButtonSignUpView.swift */,
+				F84975ED277DE06200B54025 /* ButtonLogin.swift */,
+				F84975E7277DDF0300B54025 /* ButtonResetPasswordView.swift */,
+				F84975E5277DDEA700B54025 /* ButtonLoggedLogOutView.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		F858A3072766203200062253 = {
@@ -150,6 +198,7 @@
 				F8397137276DF9A800D8151E /* Extension */,
 				F8E71C42277385B0001254D0 /* DataServices */,
 				F858A3172766203300062253 /* Assets.xcassets */,
+				F84975DE277DD7A900B54025 /* GoogleService-Info.plist */,
 				F858A3192766203300062253 /* Preview Content */,
 			);
 			path = Menu;
@@ -187,6 +236,8 @@
 			children = (
 				F8335A4127693206004C5793 /* Menu.swift */,
 				F8BF66392771E19C000ACB7D /* RestaurantMenu.swift */,
+				F84975D6277DCE5800B54025 /* Profile.swift */,
+				F84975D8277DCE9900B54025 /* ErrorSignUp.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,6 +317,10 @@
 			dependencies = (
 			);
 			name = Menu;
+			packageProductDependencies = (
+				F84975E1277DD96100B54025 /* FirebaseAuth */,
+				F84975E3277DD96100B54025 /* FirebaseAuthCombine-Community */,
+			);
 			productName = Menu;
 			productReference = F858A3102766203200062253 /* Park Kultury.app */;
 			productType = "com.apple.product-type.application";
@@ -294,6 +349,9 @@
 				Base,
 			);
 			mainGroup = F858A3072766203200062253;
+			packageReferences = (
+				F84975E0277DD96100B54025 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F858A3112766203200062253 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -310,6 +368,7 @@
 			files = (
 				F858A31B2766203300062253 /* Preview Assets.xcassets in Resources */,
 				F858A3182766203300062253 /* Assets.xcassets in Resources */,
+				F84975DF277DD7A900B54025 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84975F4277DE12E00B54025 /* RegistrationView.swift in Sources */,
 				F88C97FA2774ED5E00D208DE /* CartIsEmptyView.swift in Sources */,
 				F8397118276B711800D8151E /* BackgroundView.swift in Sources */,
 				F858A32C276653B900062253 /* CartView.swift in Sources */,
@@ -330,11 +390,16 @@
 				F88112522770C4570093ED49 /* PromotionView.swift in Sources */,
 				F8E71C442773860F001254D0 /* RestaurantMenuData.swift in Sources */,
 				F8BF66382771D36D000ACB7D /* RestaurantMenuView.swift in Sources */,
+				F84975E6277DDEA700B54025 /* ButtonLoggedLogOutView.swift in Sources */,
 				F8CF4CD3276A56C900B5DC84 /* MapView.swift in Sources */,
 				F858A3382767B8D000062253 /* SocialNetworkView.swift in Sources */,
+				F84975DB277DCF3200B54025 /* PhotoPicker.swift in Sources */,
 				F84824BB276E0DE900E27AF9 /* DeliveryView.swift in Sources */,
 				F8BF663A2771E19C000ACB7D /* RestaurantMenu.swift in Sources */,
 				F8397116276B4DCC00D8151E /* AboutView.swift in Sources */,
+				F84975EE277DE06200B54025 /* ButtonLogin.swift in Sources */,
+				F84975F2277DE0E900B54025 /* ButtonSignUpView.swift in Sources */,
+				F84975EA277DDFB700B54025 /* LoggedUserView.swift in Sources */,
 				F8506CD827749A2000C146C5 /* DetailCartView.swift in Sources */,
 				F8414D6F2770A12200FCD624 /* PickerDeliveryOrRestaurant.swift in Sources */,
 				F8335A4227693206004C5793 /* Menu.swift in Sources */,
@@ -342,14 +407,20 @@
 				F858A32A2766539900062253 /* ContactsView.swift in Sources */,
 				F839711B276B768A00D8151E /* ShapeView.swift in Sources */,
 				F86C506627790AEC004BCC47 /* PlaceAnOrderView.swift in Sources */,
+				F84975D9277DCE9900B54025 /* ErrorSignUp.swift in Sources */,
 				F87FA2222770F17A007EB089 /* PromoImageView.swift in Sources */,
+				F84975DD277DCF7100B54025 /* UserPhotoView.swift in Sources */,
 				F839713B276E06AA00D8151E /* ButtonsAboutInfoView.swift in Sources */,
 				F88112502770AB320093ED49 /* HeaderLogoView.swift in Sources */,
+				F84975D7277DCE5800B54025 /* Profile.swift in Sources */,
 				F858A3142766203200062253 /* MenuApp.swift in Sources */,
 				F8BF663C2771E26E000ACB7D /* DetailsFoodMenu.swift in Sources */,
 				F8335A442769326E004C5793 /* MenuViewModel.swift in Sources */,
+				F84975EC277DE01C00B54025 /* SignUpView.swift in Sources */,
 				F858A3362767882000062253 /* MarkerInfoView.swift in Sources */,
 				F84824B9276E0A0700E27AF9 /* InfoView.swift in Sources */,
+				F84975E8277DDF0300B54025 /* ButtonResetPasswordView.swift in Sources */,
+				F84975F0277DE09800B54025 /* LoginView.swift in Sources */,
 				F858A33427677D9F00062253 /* ContactAddressPhoneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,6 +626,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F84975E0277DD96100B54025 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F84975E1277DD96100B54025 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F84975E0277DD96100B54025 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F84975E3277DD96100B54025 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F84975E0277DD96100B54025 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F858A3082766203200062253 /* Project object */;
 }

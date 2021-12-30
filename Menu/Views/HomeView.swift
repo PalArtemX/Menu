@@ -20,7 +20,7 @@ struct HomeView: View {
                 }
                 .tag(0)
             // MARK: - Profile
-            ProfileView()
+            ProfileView(vm: vm)
                 .tabItem {
                     Image(systemName: "person")
                     Text("Profile")

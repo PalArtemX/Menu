@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    @ObservedObject var vm: MenuViewModel
+    
     var body: some View {
         ZStack {
             // MARK: - Background
             BackgroundView()
             
-            Image(systemName: "person")
+            VStack {
+                if vm.profile.signedIn {
+                    LoggedUserView(vm: vm)
+                } else {
+                    LoginView(vm: vm)
+                }
+            }
+            .onAppear {
+                vm.profile.signedIn = vm.isSignedIn
+            }
         }
     }
 }
@@ -29,6 +41,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(vm: MenuViewModel())
     }
 }
